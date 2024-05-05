@@ -54,7 +54,7 @@ class MoodleTest():
         text = self.driver.find_element(By.XPATH, '''//td[contains(text(),'out of 10.00')]''').text
         expected = self.df.iloc[idx,5]
         if (text == expected):
-            print(f"Text {idx+1} runs successfully'")
+            print(f"Text {idx+1} runs successfully")
         else:
             print(f"Text {idx+1} failed: '{text}' does not match expected value '{expected}'")
     def test_data_1(self, idx):
@@ -71,11 +71,11 @@ class MoodleTest():
         elif (self.df.iloc[idx,1] == 'Constance Marciewicz'):
             self.driver.find_element(By.XPATH, '''//p[contains(text(),'Constance Marciewicz')]''').click()
         else:
-            self.driver.find_element(By.XPATH, '''//p[contains(text(),'Emmeline Pankhurst')]''').click()
+            self.driver.find_elements(By.XPATH, '''//p[contains(text(),'Emmeline Pankhurst')]''')[0].click()
 
     def test_data_3(self, idx):
         if self.df.iloc[idx,2] == 'Emmeline Pankhurst':
-             self.driver.find_element(By.XPATH, '''//p[contains(text(),'Emmeline Pankhurst')]''').click()
+             self.driver.find_elements(By.XPATH, '''//p[contains(text(),'Emmeline Pankhurst')]''')[1].click()
         elif (self.df.iloc[idx,2] == 'Queen Victoria'):
             self.driver.find_element(By.XPATH, '''//p[contains(text(),'Queen Victoria')]''').click()
         else:
@@ -102,14 +102,16 @@ class MoodleTest():
         quiz_element.click()
         time.sleep(3)
         self.driver.find_element(By.CLASS_NAME, 'btn-primary').click()
+        time.sleep(3)
         self.driver.find_element(By.NAME, 'submitbutton').click()
 
     def submit_quiz(self):
         self.driver.find_element(By.ID, 'mod_quiz-next-nav').click()
+        time.sleep(3)
         self.driver.find_element(By.CLASS_NAME, 'btn-primary').click()
-        time.sleep(2)
+        time.sleep(3)
         self.driver.find_element(By.CSS_SELECTOR, '.modal-footer .btn-primary').click()
-        time.sleep(2)
+        time.sleep(3)
    
     def run_test(self, idx):
         #self.log_in()
@@ -122,12 +124,12 @@ class MoodleTest():
         
 
 # Main
-test = MoodleTest(USERNAME, PASSWORD, pd.read_excel('data.xlsx'))
+test = MoodleTest(USERNAME, PASSWORD, pd.read_excel('data-10.xlsx'))
 test.log_in()
 
-for i in range(0, 3):
+for i in range(0, len(test.df)):
     test.run_test(i)
-    time.sleep(5)
+    time.sleep(1)
 
 test.log_out()
 test.driver.quit()
