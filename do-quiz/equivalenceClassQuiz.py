@@ -5,6 +5,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 import time
 import pandas as pd
+import sys
 USERNAME = 'student'
 PASSWORD = 'moodle'
 COURSE_NAME = 'Votes for Women!'
@@ -124,7 +125,7 @@ class MoodleTest():
         
 
 # Main
-test = MoodleTest(USERNAME, PASSWORD, pd.read_excel('data-10.xlsx'))
+test = MoodleTest(USERNAME, PASSWORD, pd.read_excel(sys.argv[1]))
 test.log_in()
 
 for i in range(0, len(test.df)):
