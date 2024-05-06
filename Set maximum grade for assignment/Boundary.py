@@ -67,12 +67,12 @@ class MoodleTest():
    
     def run_test(self):
         self.log_in()
-        self.testcase(1, 0)
-        self.testcase(2, 1)
-        self.testcase(3, 2)
-        self.testcase(4, 99)
-        self.testcase(5, 100)
-        self.testcase(6, 101)
+        self.testcase('TC-111-001', 0)
+        self.testcase('TC-111-002', 1)
+        self.testcase('TC-111-003', 2)
+        self.testcase('TC-111-004', 99)
+        self.testcase('TC-111-005', 100)
+        self.testcase('TC-111-006', 101)
         self.log_out()
         
 # Main
