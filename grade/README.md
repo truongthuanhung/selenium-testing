@@ -1,7 +1,7 @@
 # selenium-testing: grade-assignment
 
 To run my test suite:
-1. Change the directory to folder do-quiz: cd do-quiz
-2. python equivalenceClassQuiz.py [xlsx_file_name]
+1. Change the directory to folder grade: cd grade
+2. python gradeAssignment.py [xlsx_file_name]
 
-Example: python equivalenceClassQuiz.py data-3.xlsx
+Example: python gradeAssignment.py grade_data.xlsx
