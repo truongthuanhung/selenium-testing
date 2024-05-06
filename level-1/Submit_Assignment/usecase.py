@@ -278,12 +278,12 @@ class SubmitAssignment():
 
 def main(data_filename):
 
-    data_path = './data' + f'/{data_filename}.xlsx'
+    data_path = 'Submit_Assignment/data' + f'/{data_filename}.xlsx'
     test = SubmitAssignment("student10", "moodle", pd.read_excel(data_path))
 
     # Start testcases
     test.run_all()
     test.quit()
 
-main(sys.argv[1])
+# main(sys.argv[1])
 
