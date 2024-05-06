@@ -898,6 +898,113 @@
       ],
       "value": "Nothing was submitted\\n×\\nDismiss this notification"
     }]
+  }, {
+    "id": "88eca550-59e6-40aa-9c47-f35460bf2531",
+    "name": "Remove-file",
+    "commands": [{
+      "id": "cf8756f3-d771-40a1-ac5d-4169a6422f56",
+      "comment": "",
+      "command": "open",
+      "target": "https://qa.moodledemo.net/my/courses.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2715b43-2533-4537-8a22-bc0e6d227116",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "968x1031",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e087e5c-8bb7-46f1-8d35-333a8f81e2fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=#course-info-container-2-4 .multiline > span:nth-child(2)",
+      "targets": [
+        ["css=#course-info-container-2-4 .multiline > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='course-info-container-2-4']/div/div/a/span[3]/span[2]", "xpath:idRelative"],
+        ["xpath=//span[3]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01501e6a-b3d3-40b9-b11f-c38ea92d8ae6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Assignment with file submissions",
+      "targets": [
+        ["linkText=Assignment with file submissions", "linkText"],
+        ["css=#module-5 .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[3]", "xpath:attributes"],
+        ["xpath=//li[@id='module-5']/div/div[2]/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/mod/assign/view.php?id=5')]", "xpath:href"],
+        ["xpath=//li[3]/div/div[2]/div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Assignment with file submissions')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d31a1511-4c4a-4c0a-a50b-99d34a7c8c56",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//td[contains(.,'Submitted for grading')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1714990166759_168", "id"],
+        ["css=#yui_3_18_1_1_1714990166759_168", "css:finder"],
+        ["xpath=//td[@id='yui_3_18_1_1_1714990166759_168']", "xpath:attributes"],
+        ["xpath=//tr[@id='yui_3_18_1_1_1714990166759_169']/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Submitted for grading')]", "xpath:innerText"]
+      ],
+      "value": "Submitted for grading"
+    }, {
+      "id": "e5ba5e3e-e66b-4dc4-ae7a-2d29e671febf",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Remove submission')]",
+      "targets": [
+        ["id=single_button663928805215a8", "id"],
+        ["css=#single_button663928805215a8", "css:finder"],
+        ["xpath=//button[@id='single_button663928805215a8']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div[2]/div/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Remove submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "714d692a-16a3-4971-a14e-6583ca36b3a1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//p[contains(.,'Are you sure you want to remove your submission?')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1715021997442_130", "id"],
+        ["css=#yui_3_18_1_1_1715021997442_130", "css:finder"],
+        ["xpath=//p[@id='yui_3_18_1_1_1715021997442_130']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-body']/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Are you sure you want to remove your submission?')]", "xpath:innerText"]
+      ],
+      "value": "Are you sure you want to remove your submission?"
+    }, {
+      "id": "885db982-4a05-4bec-90da-fd3ec916a227",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Continue')]",
+      "targets": [
+        ["id=single_button663928addc71c8", "id"],
+        ["css=#single_button663928addc71c8", "css:finder"],
+        ["xpath=//button[@id='single_button663928addc71c8']", "xpath:attributes"],
+        ["xpath=//div[@id='modal-footer']/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "413900ca-529d-47d5-92ea-bde186c88985",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//td[contains(.,'No submissions have been made yet')]",
+      "targets": [],
+      "value": "No submissions have been made yet"
+    }]
   }],
   "suites": [{
     "id": "3dd2de90-4693-414a-aaff-ac5a2ee1a156",
