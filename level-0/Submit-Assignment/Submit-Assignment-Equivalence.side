@@ -1,0 +1,779 @@
+{
+  "id": "9872d1b3-03cf-4254-a118-b241df4f2c78",
+  "version": "2.0",
+  "name": "Submit-Assignment-Equivalence",
+  "url": "https://qa.moodledemo.net/my/courses.php",
+  "tests": [{
+    "id": "b9a167d6-fc6f-4e90-a308-1bee3d8e40b6",
+    "name": "TC-007-001",
+    "commands": [{
+      "id": "e3eff692-11f4-4370-8cc1-1506d2fc0292",
+      "comment": "",
+      "command": "open",
+      "target": "https://qa.moodledemo.net/my/courses.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b1cb3da-0342-4b0d-80cb-a216ab81dbe0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "714e9b22-fc04-4753-bd82-11a41d2899ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=#course-info-container-2-4 .multiline > span:nth-child(2)",
+      "targets": [
+        ["css=#course-info-container-2-4 .multiline > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='course-info-container-2-4']/div/div/a/span[3]/span[2]", "xpath:idRelative"],
+        ["xpath=//span[3]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf9de68a-628f-45ef-8dae-511748c1904f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Assignment with file submissions",
+      "targets": [
+        ["linkText=Assignment with file submissions", "linkText"],
+        ["css=#module-5 .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[3]", "xpath:attributes"],
+        ["xpath=//li[@id='module-5']/div/div[2]/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://qa.moodledemo.net/mod/assign/view.php?id=5')])[2]", "xpath:href"],
+        ["xpath=//li[3]/div/div[2]/div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbc9ac4a-18d1-45e4-a66d-b253e85d5ca1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.h2",
+      "targets": [],
+      "value": "Assignment with file submissions"
+    }, {
+      "id": "48ff6606-2d66-46b5-b390-d30e73466065",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add submission')]",
+      "targets": [
+        ["id=single_button6638f3de6960a8", "id"],
+        ["css=#single_button6638f3de6960a8", "css:finder"],
+        ["xpath=//button[@id='single_button6638f3de6960a8']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0332cd31-ffaa-46b0-b112-5b00c509f8b9",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[contains(.,'Add submission')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e164bff8-9b25-475f-bfd0-9740d7ef8bba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1715008484181_445']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6bb960d3-9d58-4190-af31-bfca905f4eb0",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1715008484181_842", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1715008484181_842", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1715008484181_842']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715008484181_872']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\submit-assignment\\fnormal.pdf"
+    }, {
+      "id": "769afb1d-9c72-4526-ad61-37588ebd8209",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1715008484181_885", "id"],
+        ["css=#yui_3_18_1_1_1715008484181_885", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1715008484181_885']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715008484181_886']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a4067ff-3583-4853-8e56-e56d18c8d81b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.fp-reficons2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01e563fe-68ab-4823-a569-1d2336ed5f58",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715008484181_1044']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdd8cc1b-0820-497d-be1c-be5207ebaa38",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//td[contains(.,'Submitted for grading')]",
+      "targets": [
+        ["css=.submissionstatussubmitted", "css:finder"],
+        ["xpath=//section[@id='region-main']/div[2]/div[2]/div/div/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Submitted for grading')]", "xpath:innerText"]
+      ],
+      "value": "Submitted for grading"
+    }]
+  }, {
+    "id": "5d00fcb3-fdb6-4768-9719-ab8dda47f3e7",
+    "name": "TC-007-002",
+    "commands": [{
+      "id": "0f707f14-4ca4-4934-890d-4473d14cc0dd",
+      "comment": "",
+      "command": "open",
+      "target": "https://qa.moodledemo.net/my/courses.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49a6947e-a2c0-4dc5-8ef4-77657160e924",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a636e34-24cf-4fc5-ac03-649cf1f98bbf",
+      "comment": "",
+      "command": "click",
+      "target": "css=#course-info-container-2-4 .multiline > span:nth-child(2)",
+      "targets": [
+        ["css=#course-info-container-2-4 .multiline > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='course-info-container-2-4']/div/div/a/span[3]/span[2]", "xpath:idRelative"],
+        ["xpath=//span[3]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "828fa852-7eeb-41b8-8854-0839247f89fe",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Assignment with file submissions",
+      "targets": [
+        ["linkText=Assignment with file submissions", "linkText"],
+        ["css=#module-5 .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[3]", "xpath:attributes"],
+        ["xpath=//li[@id='module-5']/div/div[2]/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://qa.moodledemo.net/mod/assign/view.php?id=5')])[2]", "xpath:href"],
+        ["xpath=//li[3]/div/div[2]/div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d45ebaaa-427b-4cbb-b67b-0732a1bc6dd8",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.h2",
+      "targets": [],
+      "value": "Assignment with file submissions"
+    }, {
+      "id": "14663a73-3bff-42f4-832a-869dee83f2fd",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add submission')]",
+      "targets": [
+        ["id=single_button6638f3de6960a8", "id"],
+        ["css=#single_button6638f3de6960a8", "css:finder"],
+        ["xpath=//button[@id='single_button6638f3de6960a8']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "584f9cfa-a8de-4394-8aa0-b739f77ea76e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[contains(.,'Add submission')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07b2b978-3aa6-43d3-9e28-9daaa3a6b42c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1715008484181_445']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c740510-382b-4b4e-a674-4a3812bcd079",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1715008484181_842", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1715008484181_842", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1715008484181_842']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715008484181_872']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\submit-assignment\\java.exe"
+    }, {
+      "id": "9f241643-e241-4555-9551-faa6cb89eb41",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1715008484181_885", "id"],
+        ["css=#yui_3_18_1_1_1715008484181_885", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1715008484181_885']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715008484181_886']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0df69ab3-d7bf-4c86-9d53-70fb53df9047",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.fp-reficons2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f4cf753-7313-40ea-947f-6c8d8ba51e02",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715008484181_1044']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c2930e1-c781-470d-bd0a-636dda3d8853",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//td[contains(.,'Submitted for grading')]",
+      "targets": [
+        ["css=.submissionstatussubmitted", "css:finder"],
+        ["xpath=//section[@id='region-main']/div[2]/div[2]/div/div/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Submitted for grading')]", "xpath:innerText"]
+      ],
+      "value": "Submitted for grading"
+    }]
+  }, {
+    "id": "20930e1e-9d4b-4bd7-9ee2-7275d91bb169",
+    "name": "TC-007-003",
+    "commands": [{
+      "id": "5d899086-9a96-4cec-bfde-879b146d97b8",
+      "comment": "",
+      "command": "open",
+      "target": "https://qa.moodledemo.net/my/courses.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9404e1f9-256f-490a-8471-fa1a2d80c923",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "447d20c9-a8c4-417a-baff-d1768599bd7c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#course-info-container-2-4 .multiline > span:nth-child(2)",
+      "targets": [
+        ["css=#course-info-container-2-4 .multiline > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='course-info-container-2-4']/div/div/a/span[3]/span[2]", "xpath:idRelative"],
+        ["xpath=//span[3]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36e047c3-7eb8-4c22-a227-000f4682805b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Assignment with file submissions",
+      "targets": [
+        ["linkText=Assignment with file submissions", "linkText"],
+        ["css=#module-5 .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[3]", "xpath:attributes"],
+        ["xpath=//li[@id='module-5']/div/div[2]/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://qa.moodledemo.net/mod/assign/view.php?id=5')])[2]", "xpath:href"],
+        ["xpath=//li[3]/div/div[2]/div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36630531-2dc5-4c8c-aa79-663e0e81eab2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.h2",
+      "targets": [],
+      "value": "Assignment with file submissions"
+    }, {
+      "id": "f53da3d3-a967-4f56-b2d8-d07dcb3c1dcc",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add submission')]",
+      "targets": [
+        ["id=single_button6638f3de6960a8", "id"],
+        ["css=#single_button6638f3de6960a8", "css:finder"],
+        ["xpath=//button[@id='single_button6638f3de6960a8']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbfc4e14-8841-4e8e-845b-a89940a77999",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[contains(.,'Add submission')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ccf30dda-98de-44ca-bc35-75320dc9b9a9",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715008484181_1044']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9246b2b5-8319-4525-b7aa-7bfc27afcf0a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//section[@id='region-main']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//section/div[2]/div", "xpath:position"]
+      ],
+      "value": "Nothing was submitted"
+    }]
+  }, {
+    "id": "d2628def-cbca-42a4-98c8-7ac2dbe49a3c",
+    "name": "TC-007-004",
+    "commands": [{
+      "id": "b7ecaf46-b9a3-4deb-90a1-01e3aa979aa1",
+      "comment": "",
+      "command": "open",
+      "target": "https://qa.moodledemo.net/my/courses.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a8d7f15-2f5f-4061-945d-b5f3cb375a6a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c314c6e-0ed8-480d-a77b-29ee90fa12a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#course-info-container-2-4 .multiline > span:nth-child(2)",
+      "targets": [
+        ["css=#course-info-container-2-4 .multiline > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='course-info-container-2-4']/div/div/a/span[3]/span[2]", "xpath:idRelative"],
+        ["xpath=//span[3]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b963321-dd15-4dda-ab39-9389289352bb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Assignment with file submissions",
+      "targets": [
+        ["linkText=Assignment with file submissions", "linkText"],
+        ["css=#module-5 .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[3]", "xpath:attributes"],
+        ["xpath=//li[@id='module-5']/div/div[2]/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://qa.moodledemo.net/mod/assign/view.php?id=5')])[2]", "xpath:href"],
+        ["xpath=//li[3]/div/div[2]/div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fe9d314-6a75-45e1-b0a5-a1f3fd20c32d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.h2",
+      "targets": [],
+      "value": "Assignment with file submissions"
+    }, {
+      "id": "3cd84615-140e-4d50-8623-ab5a3dfa4e6d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add submission')]",
+      "targets": [
+        ["id=single_button6638f3de6960a8", "id"],
+        ["css=#single_button6638f3de6960a8", "css:finder"],
+        ["xpath=//button[@id='single_button6638f3de6960a8']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ac63300-0915-4179-a058-dbcb980c83ef",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[contains(.,'Add submission')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e64f6f9-c22a-4db0-a860-35be8799068d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1715008484181_445']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d70c5a18-9522-43a5-b541-72cc9c53d401",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1715008484181_842", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1715008484181_842", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1715008484181_842']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715008484181_872']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\submit-assignment\\fnormal.pdf"
+    }, {
+      "id": "53e88ba0-1436-4bd3-b5a3-0fe63615f650",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1715008484181_885", "id"],
+        ["css=#yui_3_18_1_1_1715008484181_885", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1715008484181_885']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715008484181_886']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ee11ca3-1a8b-49cd-9606-f8352b53ef2b",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.fp-reficons2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de0e1097-dae0-4720-8961-484afad6c4ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1715008484181_445']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27dcec94-f533-4874-b3c0-99587ed28838",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1715008484181_842", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1715008484181_842", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1715008484181_842']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715008484181_872']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\submit-assignment\\fileword.docx"
+    }, {
+      "id": "22cde398-6313-4875-8604-5eded8be038d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1715008484181_885", "id"],
+        ["css=#yui_3_18_1_1_1715008484181_885", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1715008484181_885']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715008484181_886']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec96cfe7-1fbf-4e05-917a-35e79399d0ed",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a/div/div[3]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07b245b1-dd8a-44ff-a029-d51d65099356",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//div[2]/a/div/div[3]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f979ee41-e3af-4e43-822f-447dc9e035d5",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715008484181_1044']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2dfca799-f34d-4418-8923-c9dfd014eb30",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//td[contains(.,'Submitted for grading')]",
+      "targets": [
+        ["css=.submissionstatussubmitted", "css:finder"],
+        ["xpath=//section[@id='region-main']/div[2]/div[2]/div/div/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Submitted for grading')]", "xpath:innerText"]
+      ],
+      "value": "Submitted for grading"
+    }]
+  }, {
+    "id": "fbd3c95e-56f7-43e8-b60e-4b3bfea05de0",
+    "name": "TC-007-005",
+    "commands": [{
+      "id": "fcf79a71-6d47-4661-a3fe-ba38224fdec4",
+      "comment": "",
+      "command": "open",
+      "target": "https://qa.moodledemo.net/my/courses.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4ad3df0-f224-46f4-bf5e-89c060722e76",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "651a718b-6076-40ff-babd-9c403cfeb954",
+      "comment": "",
+      "command": "click",
+      "target": "css=#course-info-container-2-4 .multiline > span:nth-child(2)",
+      "targets": [
+        ["css=#course-info-container-2-4 .multiline > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='course-info-container-2-4']/div/div/a/span[3]/span[2]", "xpath:idRelative"],
+        ["xpath=//span[3]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b187a8ef-b8f7-4060-9560-65c722ae633f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Assignment with file submissions",
+      "targets": [
+        ["linkText=Assignment with file submissions", "linkText"],
+        ["css=#module-5 .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[3]", "xpath:attributes"],
+        ["xpath=//li[@id='module-5']/div/div[2]/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://qa.moodledemo.net/mod/assign/view.php?id=5')])[2]", "xpath:href"],
+        ["xpath=//li[3]/div/div[2]/div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e7d0e26-3e82-48cc-9073-183bf937d243",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.h2",
+      "targets": [],
+      "value": "Assignment with file submissions"
+    }, {
+      "id": "884e9451-abfa-4b76-9b5b-bb1a18e6e94b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Add submission')]",
+      "targets": [
+        ["id=single_button6638f3de6960a8", "id"],
+        ["css=#single_button6638f3de6960a8", "css:finder"],
+        ["xpath=//button[@id='single_button6638f3de6960a8']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div[2]/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c6f66f2-68bc-4782-93d9-6f58e3a41869",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[contains(.,'Add submission')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad6994ba-0ccc-43e9-bbb8-68a123d6dfb2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1715008484181_445']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca43cd37-9ee3-4ea6-b8a3-191b0f3efa3b",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1715008484181_842", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1715008484181_842", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1715008484181_842']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715008484181_872']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\submit-assignment\\fnormal.pdf"
+    }, {
+      "id": "f627b06b-ef9c-464f-94a0-5b3cfe4c4729",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1715008484181_885", "id"],
+        ["css=#yui_3_18_1_1_1715008484181_885", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1715008484181_885']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715008484181_886']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc9aff15-bf22-48e3-a3f3-0bbf422cf8e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-file-o",
+      "targets": [
+        ["css=.fa-file-o", "css:finder"],
+        ["xpath=//a[@id='yui_3_18_1_1_1715008484181_445']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9f1482a-69d8-422a-8c33-c103aaff07c6",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//form/div/div/div/input",
+      "targets": [
+        ["id=yui_3_18_1_1_1715008484181_842", "id"],
+        ["name=repo_upload_file", "name"],
+        ["css=#yui_3_18_1_1_1715008484181_842", "css:finder"],
+        ["xpath=//input[@id='yui_3_18_1_1_1715008484181_842']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715008484181_872']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "C:\\submit-assignment\\jaas.dll"
+    }, {
+      "id": "5f4e5a4e-cf51-4714-8991-26cc19bda5a5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Upload this file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1715008484181_885", "id"],
+        ["css=#yui_3_18_1_1_1715008484181_885", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1715008484181_885']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715008484181_886']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Upload this file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fd000c8-7984-44f7-b0de-d2d70b205b64",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a/div/div[3]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39072536-4e91-4941-9996-7562e379dfac",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//div[2]/a/div/div[3]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9cccbf2-2e23-44e9-b57d-c5608459aca1",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_submitbutton",
+      "targets": [
+        ["id=id_submitbutton", "id"],
+        ["name=submitbutton", "name"],
+        ["css=#id_submitbutton", "css:finder"],
+        ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715008484181_1044']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf132803-803b-468d-9b00-4d3c267d7994",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//td[contains(.,'Submitted for grading')]",
+      "targets": [],
+      "value": "Submitted for grading"
+    }]
+  }],
+  "suites": [{
+    "id": "071d24ee-f0fb-4d87-82c3-5f5ef4235233",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b9a167d6-fc6f-4e90-a308-1bee3d8e40b6"]
+  }],
+  "urls": ["https://qa.moodledemo.net/my/courses.php"],
+  "plugins": []
+}
