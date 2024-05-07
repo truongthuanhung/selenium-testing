@@ -16,6 +16,7 @@ class MoodleTest():
         self.password = password
         self.driver = webdriver.Chrome()
         self.df = df
+        self.method = None
         
     def log_in(self):
         log_in_button = self.driver.find_element(By.LINK_TEXT, 'Log in')
@@ -53,21 +54,28 @@ class MoodleTest():
                search_course_element.send_keys(self.df.iloc[i]["SEARCH"])
                time.sleep(2)
                
+               prevMethod = self.method
+               self.method = self.df.iloc[i]["METHOD_TEST"]
+               if self.method != prevMethod:
+                    print(self.method)
+               
                if self.df.iloc[i]["EXPECT"] == "No courses":
-                    verify_text = self.driver.find_element(By.XPATH , '''//p''')
+                    time.sleep(2)
+                    verify_text = self.driver.find_element(By.XPATH , "//p")
                     
                     if verify_text.text == "No courses":
-                         print("Passed search field is" , self.df.iloc[i]["SEARCH"])
+                         print("PASS - " , self.df.iloc[i]["TC_ID"])
                     else:
-                         print("No courses - Failed search field is" , self.df.iloc[i]["SEARCH"])
+                         print("FAILED - " , self.df.iloc[i]["TC_ID"] , " - EXPECT:" , self.df.iloc[i]["EXPECT"], " - RESULT",self.df.iloc[i]["NOTE"]  )
                          
                elif self.df.iloc[i]["EXPECT"] == "Activity examples":
-                    verify_text = self.driver.find_element(By.CSS_SELECTOR , "#course-info-container-2-3 > div > div > a > span.multiline > span.sr-only")
+                    time.sleep(2)
+                    verify_text = self.driver.find_element(By.XPATH , "//span[3]/span[2]")
                     
                     if verify_text.text == "Activity examples":
-                         print("Activity examples - Passed search field is" , self.df.iloc[i]["SEARCH"])
+                         print("PASS - " , self.df.iloc[i]["TC_ID"])
                     else:
-                         print("Activity examples - Failed search field is", self.df.iloc[i]["SEARCH"])
+                         print("FAILED - " , self.df.iloc[i]["TC_ID"] , " - EXPECT:" , self.df.iloc[i]["EXPECT"], " - RESULT",self.df.iloc[i]["NOTE"]  )
                
                time.sleep(2)
                self.log_out()
