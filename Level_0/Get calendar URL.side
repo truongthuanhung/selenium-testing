@@ -207,7 +207,7 @@
     }, {
       "id": "554e8a14-b286-42db-aae9-bf06c9b97eb0",
       "comment": "",
-      "command": "click",
+      "command": "doubleClick",
       "target": "xpath=//button[contains(.,'Copy URL')]",
       "targets": [
         ["id=copyexporturl", "id"],
@@ -672,13 +672,6 @@
       ],
       "value": ""
     }, {
-      "id": "d0927a17-d1a9-4131-a39b-aae041318049",
-      "comment": "",
-      "command": "//click",
-      "target": "css=.w-100 > .align-items-center",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "0ffe0f66-2cac-4604-9000-48cbfaa27f29",
       "comment": "",
       "command": "verifyText",
@@ -924,7 +917,7 @@
     }, {
       "id": "cadd1bff-3b47-41d7-b528-488dac83438f",
       "comment": "",
-      "command": "click",
+      "command": "doubleClick",
       "target": "xpath=//button[contains(.,'Copy URL')]",
       "targets": [
         ["id=copyexporturl", "id"],
