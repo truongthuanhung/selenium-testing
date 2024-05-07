@@ -83,7 +83,7 @@ class MoodleTest():
     def run_test(self):
           self.driver.get('https://qa.moodledemo.net/')
           
-          # self.driver.maximize_window()
+          self.driver.maximize_window()
      
           self.search_courses()
           
