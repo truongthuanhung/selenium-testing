@@ -40,6 +40,8 @@ class MoodleTest():
         time.sleep(5)
 
     def enter_course(self, course_name):
+        self.driver.find_element(By.ID, 'groupingdropdown').click()
+        self.driver.find_element(By.LINK_TEXT, 'All')
         course_element = self.driver.find_element(By.LINK_TEXT, course_name)
         course_element.click()
         time.sleep(5)

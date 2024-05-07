@@ -128,7 +128,7 @@
       "id": "17564e3b-7930-4a80-9853-793c49480c1f",
       "comment": "",
       "command": "click",
-      "target": "css=#course-info-container-65-8 .multiline > span:nth-child(2)",
+      "target": "linkText=Votes for Women!",
       "targets": [
         ["css=#course-info-container-65-8 .multiline > span:nth-child(2)", "css:finder"],
         ["xpath=//div[@id='course-info-container-65-8']/div/div/a/span[3]/span[2]", "xpath:idRelative"],
@@ -243,7 +243,7 @@
       "id": "34643460-22f3-4aee-9337-0ff23202ebf0",
       "comment": "",
       "command": "click",
-      "target": "xpath=//p[contains(.,'1928')]",
+      "target": "xpath=//p[contains(.,'1928')][1]",
       "targets": [
         ["id=yui_3_18_1_1_1714989768079_244", "id"],
         ["css=#yui_3_18_1_1_1714989768079_244", "css:finder"],
@@ -514,7 +514,7 @@
       "id": "3b9dcb74-b17b-402c-84bd-8fc98df8ccb0",
       "comment": "",
       "command": "click",
-      "target": "css=#course-info-container-65-8 .multiline > span:nth-child(2)",
+      "target": "linkText=Votes for Women!",
       "targets": [
         ["css=#course-info-container-65-8 .multiline > span:nth-child(2)", "css:finder"],
         ["xpath=//div[@id='course-info-container-65-8']/div/div/a/span[3]/span[2]", "xpath:idRelative"],
@@ -924,7 +924,7 @@
       "id": "17a56392-1f9f-41eb-8550-aa03164ef822",
       "comment": "",
       "command": "click",
-      "target": "css=#groupingdropdown > span",
+      "target": "xpath=//section/div/div/div/div/div/div/button/span",
       "targets": [
         ["css=#groupingdropdown > span", "css:finder"],
         ["xpath=//button[@id='groupingdropdown']/span", "xpath:idRelative"],
@@ -950,7 +950,7 @@
       "id": "965af11b-53e7-42b3-a315-a9e41dc161bf",
       "comment": "",
       "command": "click",
-      "target": "css=#course-info-container-65-8 .multiline > span:nth-child(2)",
+      "target": "linkText=Votes for Women!",
       "targets": [
         ["css=#course-info-container-65-8 .multiline > span:nth-child(2)", "css:finder"],
         ["xpath=//div[@id='course-info-container-65-8']/div/div/a/span[3]/span[2]", "xpath:idRelative"],
@@ -1294,7 +1294,7 @@
       "id": "16bf3048-9354-4510-8f0c-808ec121f7e3",
       "comment": "",
       "command": "click",
-      "target": "css=#groupingdropdown > span",
+      "target": "xpath=//section/div/div/div/div/div/div/button/span",
       "targets": [
         ["css=#groupingdropdown > span", "css:finder"],
         ["xpath=//button[@id='groupingdropdown']/span", "xpath:idRelative"],
@@ -1320,7 +1320,7 @@
       "id": "a004b8b2-4157-4008-b8b0-9fdd21b69c95",
       "comment": "",
       "command": "click",
-      "target": "css=#course-info-container-65-8 .multiline > span:nth-child(2)",
+      "target": "linkText=Votes for Women!",
       "targets": [
         ["css=#course-info-container-65-8 .multiline > span:nth-child(2)", "css:finder"],
         ["xpath=//div[@id='course-info-container-65-8']/div/div/a/span[3]/span[2]", "xpath:idRelative"],
@@ -1469,6 +1469,238 @@
         ["xpath=//a[contains(text(),'Log out')]", "xpath:link"],
         ["xpath=//div[@id='carousel-item-main']/a[8]", "xpath:idRelative"],
         ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/login/logout.php?sesskey=EumtEpHqc3')]", "xpath:href"],
+        ["xpath=//a[8]", "xpath:position"],
+        ["xpath=//a[contains(.,'Log out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "454dee89-b8dc-4dad-99bc-21cddf20cb92",
+    "name": "TC-001-007",
+    "commands": [{
+      "id": "229518b4-2e57-43d8-8223-0ed20d9b62e2",
+      "comment": "",
+      "command": "open",
+      "target": "https://qa.moodledemo.net/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2bef46a8-c3a3-4eac-bf02-d619217eac42",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b533b67-d781-4cf8-8ca5-571e25f77977",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/login/index.php')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d233cd69-3319-4f0a-adc1-6bfe6c3eca59",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27b00312-e358-4f7c-b555-d248bae36cc4",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb0a8feb-cc89-4dce-9d3e-2a7fab490788",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715046070331_24']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "moodle"
+    }, {
+      "id": "76c91c03-faa8-452d-9506-0a7151225d69",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cad9196-660c-4399-a88c-bd8c37026f2f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#groupingdropdown > span",
+      "targets": [
+        ["css=#groupingdropdown > span", "css:finder"],
+        ["xpath=//button[@id='groupingdropdown']/span", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26243e5e-bd17-45f5-ace1-1038fad30565",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=All",
+      "targets": [
+        ["linkText=All", "linkText"],
+        ["css=.show > li:nth-child(2) > .dropdown-item", "css:finder"],
+        ["xpath=//a[contains(text(),'All')]", "xpath:link"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715046080528_40']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[13]", "xpath:href"],
+        ["xpath=//div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'All')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0bfd064-8f41-4f0d-9762-b0ce5653f8b7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Votes for Women!",
+      "targets": [
+        ["css=#course-info-container-65-8 .multiline > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='course-info-container-65-8']/div/div/a/span[3]/span[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/a/span[3]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1bab587-3451-4a7b-8603-0b0cb97605b2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Suffrage quiz",
+      "targets": [
+        ["linkText=Suffrage quiz", "linkText"],
+        ["css=.modtype_quiz .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[14]", "xpath:attributes"],
+        ["xpath=//li[@id='module-1038']/div/div[2]/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://qa.moodledemo.net/mod/quiz/view.php?id=1038')])[2]", "xpath:href"],
+        ["xpath=//li[4]/div/div[2]/ul/li/div/div[2]/div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d51db491-5681-41e1-8ddf-82524380ade9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Suffrage quiz",
+      "targets": [
+        ["linkText=Suffrage quiz", "linkText"],
+        ["css=.modtype_quiz .aalink", "css:finder"],
+        ["xpath=(//a[@onclick=''])[14]", "xpath:attributes"],
+        ["xpath=//li[@id='module-1038']/div/div[2]/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://qa.moodledemo.net/mod/quiz/view.php?id=1038')])[2]", "xpath:href"],
+        ["xpath=//li[4]/div/div[2]/ul/li/div/div[2]/div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4edfa629-7501-4fc7-964f-db2797dfbd10",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd771e35-0f1c-474d-9548-05447325549c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//form/button",
+      "targets": [
+        ["id=single_button663986d2ddb707", "id"],
+        ["css=#single_button663986d2ddb707", "css:finder"],
+        ["xpath=//button[@id='single_button663986d2ddb707']", "xpath:attributes"],
+        ["xpath=//form[@id='yui_3_18_1_1_1715046098741_220']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Re-attempt quiz')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac2aef29-4ddf-4f87-86da-b052e854c235",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_cancel",
+      "targets": [
+        ["id=id_cancel", "id"],
+        ["name=cancel", "name"],
+        ["css=#id_cancel", "css:finder"],
+        ["xpath=//input[@id='id_cancel']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715046098741_297']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "636efb6f-1022-431b-9bd1-ea067dcf0983",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//h1[contains(.,'Suffrage quiz')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1715046098741_313", "id"],
+        ["css=#yui_3_18_1_1_1715046098741_313", "css:finder"],
+        ["xpath=//h1[@id='yui_3_18_1_1_1715046098741_313']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715046098741_314']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Suffrage quiz')]", "xpath:innerText"]
+      ],
+      "value": "Suffrage quiz"
+    }, {
+      "id": "d3063ced-f660-4287-a98f-faff2ceb4fdd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.userpicture",
+      "targets": [
+        ["css=.userpicture", "css:finder"],
+        ["xpath=//img[contains(@src,'https://qa.moodledemo.net/pluginfile.php/27/user/icon/boost/f2?rev=5522')]", "xpath:img"],
+        ["xpath=//a[@id='user-menu-toggle']/span/span/span/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a546a9fa-f3a9-4ba0-b531-5e83e2dedf20",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log out",
+      "targets": [
+        ["id=yui_3_18_1_1_1715046098741_361", "id"],
+        ["linkText=Log out", "linkText"],
+        ["css=#yui_3_18_1_1_1715046098741_361", "css:finder"],
+        ["xpath=//a[contains(text(),'Log out')]", "xpath:link"],
+        ["xpath=//a[@id='yui_3_18_1_1_1715046098741_361']", "xpath:attributes"],
+        ["xpath=//div[@id='carousel-item-main']/a[8]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/login/logout.php?sesskey=8FvzXaJNEo')]", "xpath:href"],
         ["xpath=//a[8]", "xpath:position"],
         ["xpath=//a[contains(.,'Log out')]", "xpath:innerText"]
       ],
