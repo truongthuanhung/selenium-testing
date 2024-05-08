@@ -70,9 +70,10 @@ class MoodleTest():
         self.testcase('TC-111-001', 0)
         self.testcase('TC-111-002', 1)
         self.testcase('TC-111-003', 2)
-        self.testcase('TC-111-004', 99)
-        self.testcase('TC-111-005', 100)
-        self.testcase('TC-111-006', 101)
+        self.testcase('TC-111-004', 50)
+        self.testcase('TC-111-005', 99)
+        self.testcase('TC-111-006', 100)
+        self.testcase('TC-111-007', 101)
         self.log_out()
         
 # Main
