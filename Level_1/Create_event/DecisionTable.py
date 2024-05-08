@@ -86,7 +86,8 @@ class MoodleTest():
         self.log_in()
         self.testcase('TC-053-001', "Học từ vựng", 1)
         self.testcase('TC-053-002', "Học từ vựng", 0)
-        self.testcase('TC-053-003', "", 0)
+        self.testcase('TC-053-003', "", 1)
+        self.testcase('TC-053-004', "", 0)
         self.log_out()
         
 # Main
