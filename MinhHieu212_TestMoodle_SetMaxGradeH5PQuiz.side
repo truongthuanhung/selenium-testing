@@ -10,7 +10,7 @@
       "id": "6e96013e-866f-4290-a25e-fba011dd1ef5",
       "comment": "",
       "command": "open",
-      "target": "/",
+      "target": "https://qa.moodledemo.net/",
       "targets": [],
       "value": ""
     }, {
@@ -21,10 +21,24 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "ff55e4b6-8c59-461e-9642-5e9a3dd370a2",
+      "comment": "",
+      "command": "click",
+      "target": "id=lang-menu-toggle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64837b97-7909-46b3-b7c0-e248ddb20685",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'English ‎(en)‎')]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "82785d3b-b8cc-4196-a485-433200e103b5",
       "comment": "",
       "command": "click",
-      "target": "linkText=Đăng nhập",
+      "target": "linkText=Log in",
       "targets": [
         ["linkText=Đăng nhập", "linkText"],
         ["css=.login > a", "css:finder"],
@@ -45,6 +59,13 @@
         ["xpath=//section[@id='region-main']/div/div", "xpath:idRelative"],
         ["xpath=//section/div/div", "xpath:position"]
       ],
+      "value": ""
+    }, {
+      "id": "0af794c5-fa07-42ce-98cc-19b879822700",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [],
       "value": ""
     }, {
       "id": "8417c625-57f9-47b0-8646-bf9a21547002",
@@ -142,46 +163,63 @@
       ],
       "value": ""
     }, {
-      "id": "e6b32a3c-2215-4d84-8796-3f529437a80d",
+      "id": "a20cecbc-1427-490e-91fe-e25c8a83327d",
       "comment": "",
       "command": "click",
-      "target": "xpath=//div[8]",
-      "targets": [
-        ["css=#usernavigation > div:nth-child(9)", "css:finder"],
-        ["xpath=//div[@id='usernavigation']/div[8]", "xpath:idRelative"],
-        ["xpath=//div[8]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "339a7e4c-70de-4006-ba86-da36170bc4f4",
-      "comment": "",
-      "command": "click",
-      "target": "xpath=//li[9]/div/div[2]/ul/li/div[2]/div[2]/div[2]/div/div/span/a",
+      "target": "css=.modtype_h5pactivity > .activityname .stretched-link",
       "targets": [
         ["css=.modtype_h5pactivity > .activityname .stretched-link", "css:finder"],
-        ["xpath=(//a[@onclick=''])[20]", "xpath:attributes"],
+        ["xpath=(//a[@onclick=''])[18]", "xpath:attributes"],
         ["xpath=//li[@id='module-1013']/div[2]/div[2]/div[2]/div/div/span/a", "xpath:idRelative"],
         ["xpath=(//a[contains(@href, 'https://qa.moodledemo.net/mod/h5pactivity/view.php?id=1013')])[2]", "xpath:href"],
-        ["xpath=//li[9]/div/div[2]/ul/li/div[2]/div[2]/div[2]/div/div/span/a", "xpath:position"]
+        ["xpath=//li[8]/div/div[2]/ul/li/div[2]/div[2]/div[2]/div/div/span/a", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "95959c2a-90b2-4b14-b3a7-0cf66bc316bc",
+      "id": "8ae8d35b-b54b-4bbb-8d6a-19fffdce7693",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Edit H5P content",
+      "targets": [
+        ["linkText=Edit H5P content", "linkText"],
+        ["css=.text-primary:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='region-main']/div[2]/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/h5p/edit.php?url=https%3A%2F%2Fqa.moodledemo.net%2Fpluginfile.php%2F20011%2Fmod_h5pactivity%2Fpackage%2F0%2FVersion%25202%2520Global%2520warming-video-2-855973.h5p')]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,' Edit H5P content')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c5a534d-804e-4627-8f34-24d833b22ba6",
       "comment": "",
       "command": "click",
       "target": "linkText=Settings",
       "targets": [
         ["linkText=Settings", "linkText"],
-        ["css=#moremenu-6638bf83b196f-nav-tabs > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["css=#moremenu-663ad567ef609-nav-tabs > .nav-item:nth-child(2) > .nav-link", "css:finder"],
         ["xpath=//a[contains(text(),'Settings')]", "xpath:link"],
-        ["xpath=//ul[@id='moremenu-6638bf83b196f-nav-tabs']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//ul[@id='moremenu-663ad567ef609-nav-tabs']/li[2]/a", "xpath:idRelative"],
         ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/course/modedit.php?update=1013&return=1')]", "xpath:href"],
         ["xpath=//div[2]/nav/ul/li[2]/a", "xpath:position"],
         ["xpath=//a[contains(.,'Settings')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "af55e946-cc76-4ea8-8571-fa11617c04c6",
+      "id": "52e4a0c0-c861-4bcf-8f00-5f7c11b87aad",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,158.1818084716797)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3ee1b68-3c38-446f-9af9-cc84b70a671f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,699.0908813476562)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66f8b5a5-4d47-4b88-9ac0-ab9a784f3b51",
       "comment": "",
       "command": "click",
       "target": "id=collapseElement-2",
@@ -190,13 +228,13 @@
         ["linkText=Grade", "linkText"],
         ["css=#collapseElement-2", "css:finder"],
         ["xpath=//a[@id='collapseElement-2']", "xpath:attributes"],
-        ["xpath=//div[@id='yui_3_18_1_1_1714995416654_874']/a", "xpath:idRelative"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715131758593_853']/a", "xpath:idRelative"],
         ["xpath=//a[contains(@href, '#id_modstandardgradecontainer')]", "xpath:href"],
         ["xpath=//fieldset[3]/div/div/a", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "90a6dece-b3ee-47a5-8447-100aad67a67f",
+      "id": "b7ba6c61-3f98-483f-b520-bb2b0cdf68d9",
       "comment": "",
       "command": "click",
       "target": "id=id_grade_modgrade_point",
@@ -205,12 +243,12 @@
         ["name=grade[modgrade_point]", "name"],
         ["css=#id_grade_modgrade_point", "css:finder"],
         ["xpath=//input[@id='id_grade_modgrade_point']", "xpath:attributes"],
-        ["xpath=//span[@id='yui_3_18_1_1_1714995416654_887']/input", "xpath:idRelative"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715131758593_865']/input", "xpath:idRelative"],
         ["xpath=//span/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "791b61a7-749c-4bc7-986c-04523d5b16fd",
+      "id": "d9809555-2134-44f6-aa49-5c0f73359cce",
       "comment": "",
       "command": "type",
       "target": "id=id_grade_modgrade_point",
@@ -219,12 +257,12 @@
         ["name=grade[modgrade_point]", "name"],
         ["css=#id_grade_modgrade_point", "css:finder"],
         ["xpath=//input[@id='id_grade_modgrade_point']", "xpath:attributes"],
-        ["xpath=//span[@id='yui_3_18_1_1_1714995416654_887']/input", "xpath:idRelative"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715131758593_865']/input", "xpath:idRelative"],
         ["xpath=//span/input", "xpath:position"]
       ],
       "value": "0"
     }, {
-      "id": "5d5ea081-3026-4474-b736-712c50d109da",
+      "id": "4156cb8c-f7ea-445e-ac97-53847890f277",
       "comment": "",
       "command": "click",
       "target": "id=id_submitbutton",
@@ -233,12 +271,12 @@
         ["name=submitbutton", "name"],
         ["css=#id_submitbutton", "css:finder"],
         ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
-        ["xpath=//span[@id='yui_3_18_1_1_1714995416654_905']/input", "xpath:idRelative"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715131758593_880']/input", "xpath:idRelative"],
         ["xpath=//div[2]/span/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "e2b43c2f-2303-4408-9bf8-297fadc1d1ec",
+      "id": "39e66e54-b1bb-49c8-9e12-385782202552",
       "comment": "",
       "command": "click",
       "target": "css=#fitem_fgroup_id_grade > .col-md-9",
@@ -249,7 +287,7 @@
       ],
       "value": ""
     }, {
-      "id": "94ebfde3-3963-4f45-a8e9-a5dc933566f0",
+      "id": "9d41e768-68bd-4731-9e03-b058cef17dbb",
       "comment": "",
       "command": "verifyText",
       "target": "id=fgroup_id_error_grade",
@@ -257,12 +295,26 @@
         ["id=fgroup_id_error_grade", "id"],
         ["css=#fgroup_id_error_grade", "css:finder"],
         ["xpath=//div[@id='fgroup_id_error_grade']", "xpath:attributes"],
-        ["xpath=//div[@id='yui_3_18_1_1_1714995436214_842']/div", "xpath:idRelative"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715131773012_846']/div", "xpath:idRelative"],
         ["xpath=//fieldset[3]/div[2]/div/div[2]/div", "xpath:position"]
       ],
       "value": "Invalid grade value. This must be an integer between 1 and 100"
     }, {
-      "id": "54b236bd-d1a1-42b4-aa5c-e3c3217a2f37",
+      "id": "92d8d915-23c8-42e3-8d1f-d0f77dd2da17",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_cancel",
+      "targets": [
+        ["id=id_cancel", "id"],
+        ["name=cancel", "name"],
+        ["css=#id_cancel", "css:finder"],
+        ["xpath=//input[@id='id_cancel']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715131773012_866']/input", "xpath:idRelative"],
+        ["xpath=//div/div/div[3]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e29b517d-3bac-4398-8797-ef59285a652b",
       "comment": "",
       "command": "click",
       "target": "id=user-menu-toggle",
@@ -270,30 +322,28 @@
         ["id=user-menu-toggle", "id"],
         ["css=#user-menu-toggle", "css:finder"],
         ["xpath=//a[@id='user-menu-toggle']", "xpath:attributes"],
-        ["xpath=//div[@id='yui_3_18_1_1_1714995436214_870']/a", "xpath:idRelative"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/div/a", "xpath:idRelative"],
         ["xpath=(//a[contains(@href, '#')])[8]", "xpath:href"],
         ["xpath=//div[5]/div/div/a", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "eb58794d-ea0e-48ae-bbec-98e5381dbcd9",
+      "id": "121a3e37-f572-403a-8579-c2deceb20b65",
       "comment": "",
       "command": "click",
       "target": "linkText=Log out",
       "targets": [
-        ["id=yui_3_18_1_1_1714995436214_898", "id"],
         ["linkText=Log out", "linkText"],
-        ["css=#yui_3_18_1_1_1714995436214_898", "css:finder"],
+        ["css=#carousel-item-main > .dropdown-item:nth-child(11)", "css:finder"],
         ["xpath=//a[contains(text(),'Log out')]", "xpath:link"],
-        ["xpath=//a[@id='yui_3_18_1_1_1714995436214_898']", "xpath:attributes"],
         ["xpath=//div[@id='carousel-item-main']/a[9]", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/login/logout.php?sesskey=ek86ghGjOb')]", "xpath:href"],
+        ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/login/logout.php?sesskey=sudaINUwG9')]", "xpath:href"],
         ["xpath=//a[9]", "xpath:position"],
         ["xpath=//a[contains(.,'Log out')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "eb2817ba-9a46-4054-847b-f0dbab5d244d",
+      "id": "5b02ff30-4d9b-4643-a912-a3c700ab9a86",
       "comment": "",
       "command": "close",
       "target": "",
@@ -301,27 +351,41 @@
       "value": ""
     }]
   }, {
-    "id": "6c25c78b-a1a1-435c-98d9-648ece54ff7f",
+    "id": "ef646574-f98c-4a0f-af56-4bc3ff0cd068",
     "name": "TC-363-019",
     "commands": [{
-      "id": "f38fa753-d500-474c-b49b-6e91ed02494b",
+      "id": "1061af63-24e2-45f5-a85f-66b929a1a581",
       "comment": "",
       "command": "open",
-      "target": "/",
+      "target": "https://qa.moodledemo.net/",
       "targets": [],
       "value": ""
     }, {
-      "id": "4a23e12c-fd5e-4073-83a0-3a9c9afe09db",
+      "id": "a0ab6e77-5876-4889-be4c-d8709960ff24",
       "comment": "",
       "command": "setWindowSize",
       "target": "900x983",
       "targets": [],
       "value": ""
     }, {
-      "id": "5a53c8be-2c9a-4db5-930b-c8b0159eec04",
+      "id": "0eeece23-d3bf-4624-9f80-dabec745e44b",
       "comment": "",
       "command": "click",
-      "target": "linkText=Đăng nhập",
+      "target": "id=lang-menu-toggle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2e1cd3f0-a2dd-4850-9ace-ab756c34158b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'English ‎(en)‎')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a395da6-9ac9-49c9-8433-d895af43a4cb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
       "targets": [
         ["linkText=Đăng nhập", "linkText"],
         ["css=.login > a", "css:finder"],
@@ -333,7 +397,7 @@
       ],
       "value": ""
     }, {
-      "id": "ffb60f99-fef1-4858-8aa2-f5bce4450a58",
+      "id": "2a550ce1-13c8-4954-85d2-1d97764521f1",
       "comment": "",
       "command": "click",
       "target": "css=.login-container",
@@ -344,7 +408,14 @@
       ],
       "value": ""
     }, {
-      "id": "4ead65a1-57a9-4644-b260-23b93f9dffa1",
+      "id": "770edaef-53a6-4eb6-8b8a-b7707dd0bbbd",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e428ee9d-3a1e-442d-9858-1f1909714fdd",
       "comment": "",
       "command": "type",
       "target": "id=username",
@@ -358,7 +429,7 @@
       ],
       "value": "teacher"
     }, {
-      "id": "f4d2a410-f0a5-44bb-8209-51e40b618e41",
+      "id": "c8bab664-52ba-490d-9bbc-4db1a92e543c",
       "comment": "",
       "command": "click",
       "target": "id=password",
@@ -372,7 +443,7 @@
       ],
       "value": ""
     }, {
-      "id": "3088a940-89a0-47dd-a5fb-62112a8397ec",
+      "id": "d42cc8b5-3fae-4ecf-87dd-acb3400b5c42",
       "comment": "",
       "command": "type",
       "target": "id=password",
@@ -386,7 +457,7 @@
       ],
       "value": "moodle"
     }, {
-      "id": "381d5d08-2569-4a66-8042-8fc42bec24ce",
+      "id": "0b71ed76-da5e-442c-9fc7-57ed8b7ce64a",
       "comment": "",
       "command": "sendKeys",
       "target": "id=password",
@@ -400,7 +471,7 @@
       ],
       "value": "${KEY_ENTER}"
     }, {
-      "id": "37781eb9-031b-4a6b-8015-1723446d49cf",
+      "id": "970eac95-e87a-4678-86ae-4b3a7b793349",
       "comment": "",
       "command": "click",
       "target": "id=loginbtn",
@@ -414,7 +485,7 @@
       ],
       "value": ""
     }, {
-      "id": "8958ec98-7e94-4323-8754-4b0bab0e9576",
+      "id": "bc48dda9-07bc-4717-b7ec-fd186fff4a52",
       "comment": "",
       "command": "click",
       "target": "xpath=//div/div/div/div/div/a/div",
@@ -425,7 +496,7 @@
       ],
       "value": ""
     }, {
-      "id": "61ead8dc-283d-4696-b0cd-d9ba910ebd39",
+      "id": "306e110f-88ef-40f0-aee5-cb4968d5b281",
       "comment": "",
       "command": "click",
       "target": "name=setmode",
@@ -439,46 +510,63 @@
       ],
       "value": ""
     }, {
-      "id": "61184970-f96d-4e0a-a159-ca13bff4d9a9",
+      "id": "8c31ae7b-a832-403f-a276-c678f5106ecc",
       "comment": "",
       "command": "click",
-      "target": "xpath=//div[8]",
-      "targets": [
-        ["css=#usernavigation > div:nth-child(9)", "css:finder"],
-        ["xpath=//div[@id='usernavigation']/div[8]", "xpath:idRelative"],
-        ["xpath=//div[8]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "3d8d41ef-6ac7-4d6d-b9ba-4d7c9f84f98d",
-      "comment": "",
-      "command": "click",
-      "target": "xpath=//li[9]/div/div[2]/ul/li/div[2]/div[2]/div[2]/div/div/span/a",
+      "target": "css=.modtype_h5pactivity > .activityname .stretched-link",
       "targets": [
         ["css=.modtype_h5pactivity > .activityname .stretched-link", "css:finder"],
-        ["xpath=(//a[@onclick=''])[20]", "xpath:attributes"],
+        ["xpath=(//a[@onclick=''])[18]", "xpath:attributes"],
         ["xpath=//li[@id='module-1013']/div[2]/div[2]/div[2]/div/div/span/a", "xpath:idRelative"],
         ["xpath=(//a[contains(@href, 'https://qa.moodledemo.net/mod/h5pactivity/view.php?id=1013')])[2]", "xpath:href"],
-        ["xpath=//li[9]/div/div[2]/ul/li/div[2]/div[2]/div[2]/div/div/span/a", "xpath:position"]
+        ["xpath=//li[8]/div/div[2]/ul/li/div[2]/div[2]/div[2]/div/div/span/a", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "269377e7-7cf6-4f69-b50c-acbc0cb926fa",
+      "id": "0b3143ae-bcc6-4fc7-a054-8bea1e6f2d47",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Edit H5P content",
+      "targets": [
+        ["linkText=Edit H5P content", "linkText"],
+        ["css=.text-primary:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='region-main']/div[2]/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/h5p/edit.php?url=https%3A%2F%2Fqa.moodledemo.net%2Fpluginfile.php%2F20011%2Fmod_h5pactivity%2Fpackage%2F0%2FVersion%25202%2520Global%2520warming-video-2-855973.h5p')]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,' Edit H5P content')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d7fb507-7e8e-4b03-8559-13fe605742f1",
       "comment": "",
       "command": "click",
       "target": "linkText=Settings",
       "targets": [
         ["linkText=Settings", "linkText"],
-        ["css=#moremenu-6638bf83b196f-nav-tabs > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["css=#moremenu-663ad567ef609-nav-tabs > .nav-item:nth-child(2) > .nav-link", "css:finder"],
         ["xpath=//a[contains(text(),'Settings')]", "xpath:link"],
-        ["xpath=//ul[@id='moremenu-6638bf83b196f-nav-tabs']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//ul[@id='moremenu-663ad567ef609-nav-tabs']/li[2]/a", "xpath:idRelative"],
         ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/course/modedit.php?update=1013&return=1')]", "xpath:href"],
         ["xpath=//div[2]/nav/ul/li[2]/a", "xpath:position"],
         ["xpath=//a[contains(.,'Settings')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "90368417-29cc-4bcc-b3e3-33c030cdf8f9",
+      "id": "d037b51e-ab75-4b80-9106-522620afa6ad",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,158.1818084716797)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "419bf52d-c556-4d9f-98fd-5e3b13604b29",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,699.0908813476562)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16ae9836-1465-42b7-bf65-3aef2f311716",
       "comment": "",
       "command": "click",
       "target": "id=collapseElement-2",
@@ -487,13 +575,13 @@
         ["linkText=Grade", "linkText"],
         ["css=#collapseElement-2", "css:finder"],
         ["xpath=//a[@id='collapseElement-2']", "xpath:attributes"],
-        ["xpath=//div[@id='yui_3_18_1_1_1714995416654_874']/a", "xpath:idRelative"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715131758593_853']/a", "xpath:idRelative"],
         ["xpath=//a[contains(@href, '#id_modstandardgradecontainer')]", "xpath:href"],
         ["xpath=//fieldset[3]/div/div/a", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "ef6bcf52-8200-492d-ae54-d4b449e36de3",
+      "id": "ce74aa45-1da5-4ab8-bf38-b0295439da28",
       "comment": "",
       "command": "click",
       "target": "id=id_grade_modgrade_point",
@@ -502,12 +590,12 @@
         ["name=grade[modgrade_point]", "name"],
         ["css=#id_grade_modgrade_point", "css:finder"],
         ["xpath=//input[@id='id_grade_modgrade_point']", "xpath:attributes"],
-        ["xpath=//span[@id='yui_3_18_1_1_1714995416654_887']/input", "xpath:idRelative"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715131758593_865']/input", "xpath:idRelative"],
         ["xpath=//span/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "15496639-ebff-449d-8274-e2c11d91c6c2",
+      "id": "d907d01c-8995-4f0a-bd36-563972856c0b",
       "comment": "",
       "command": "type",
       "target": "id=id_grade_modgrade_point",
@@ -516,12 +604,12 @@
         ["name=grade[modgrade_point]", "name"],
         ["css=#id_grade_modgrade_point", "css:finder"],
         ["xpath=//input[@id='id_grade_modgrade_point']", "xpath:attributes"],
-        ["xpath=//span[@id='yui_3_18_1_1_1714995416654_887']/input", "xpath:idRelative"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715131758593_865']/input", "xpath:idRelative"],
         ["xpath=//span/input", "xpath:position"]
       ],
       "value": "1"
     }, {
-      "id": "e3874127-a59f-4214-9a19-f26c8e980918",
+      "id": "b38a8a3e-4507-44d7-b9cf-ee4c1db42a5a",
       "comment": "",
       "command": "click",
       "target": "id=id_submitbutton",
@@ -530,15 +618,15 @@
         ["name=submitbutton", "name"],
         ["css=#id_submitbutton", "css:finder"],
         ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
-        ["xpath=//span[@id='yui_3_18_1_1_1714995416654_905']/input", "xpath:idRelative"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715131758593_880']/input", "xpath:idRelative"],
         ["xpath=//div[2]/span/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "505e6ead-9a89-4a47-8251-00b3a7076b79",
+      "id": "f8269039-2821-4b29-b33f-1aae9eb56dfa",
       "comment": "",
       "command": "click",
-      "target": "xpath=//section/div[2]",
+      "target": "css=#region-main > div:nth-child(4)",
       "targets": [
         ["css=#region-main > div:nth-child(4)", "css:finder"],
         ["xpath=//section[@id='region-main']/div[2]", "xpath:idRelative"],
@@ -546,19 +634,32 @@
       ],
       "value": ""
     }, {
-      "id": "a3ad408b-04d3-45e7-96d4-35bd720755d6",
+      "id": "fa0fa353-f0d8-4220-9866-ed0d493ced4c",
       "comment": "",
       "command": "verifyText",
       "target": "xpath=//div[2]/h2",
       "targets": [
-        ["css=#yui_3_18_1_1_1714995560315_197 > h2", "css:finder"],
-        ["xpath=//div[@id='yui_3_18_1_1_1714995560315_197']/h2", "xpath:idRelative"],
+        ["css=#yui_3_18_1_1_1715132547844_196 > h2", "css:finder"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715132547844_196']/h2", "xpath:idRelative"],
         ["xpath=//div[2]/h2", "xpath:position"],
         ["xpath=//h2[contains(.,'Recalculating grades')]", "xpath:innerText"]
       ],
       "value": "Recalculating grades"
     }, {
-      "id": "ade5904a-464f-4214-8716-8b33e31aecd1",
+      "id": "af840b43-2e1a-47c9-928f-1a5ab6b8a23b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(text(),'H5P')])[3]",
+      "targets": [
+        ["css=#moremenu-663ad882baf5c-nav-tabs > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'H5P')])[3]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-663ad882baf5c-nav-tabs']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://qa.moodledemo.net/mod/h5pactivity/view.php?id=1013')])[2]", "xpath:href"],
+        ["xpath=//div[2]/nav/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52318ca2-edad-4dc3-a50d-f83e6f486ba6",
       "comment": "",
       "command": "click",
       "target": "id=user-menu-toggle",
@@ -572,7 +673,7 @@
       ],
       "value": ""
     }, {
-      "id": "adb5c4a4-e873-49a9-96fa-cf124c3b9c6c",
+      "id": "8d2d114b-7cdd-412d-9cbb-8eb155fe7fcd",
       "comment": "",
       "command": "click",
       "target": "linkText=Log out",
@@ -581,13 +682,13 @@
         ["css=#carousel-item-main > .dropdown-item:nth-child(11)", "css:finder"],
         ["xpath=//a[contains(text(),'Log out')]", "xpath:link"],
         ["xpath=//div[@id='carousel-item-main']/a[9]", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/login/logout.php?sesskey=eWjDhnyuIm')]", "xpath:href"],
+        ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/login/logout.php?sesskey=2DqwBxHDni')]", "xpath:href"],
         ["xpath=//a[9]", "xpath:position"],
         ["xpath=//a[contains(.,'Log out')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "c4427689-5f57-46bc-89f9-92220d0a8129",
+      "id": "b1055b56-13e9-4d47-8102-31f2a05dca70",
       "comment": "",
       "command": "close",
       "target": "",
@@ -595,27 +696,41 @@
       "value": ""
     }]
   }, {
-    "id": "6f97cb11-95b0-4a75-a177-40e30c2f3966",
+    "id": "81dc652a-3987-4fe3-8a08-c5d63c2e311f",
     "name": "TC-363-020",
     "commands": [{
-      "id": "b5b778b1-b23e-4a6d-8c9c-279a667bd499",
+      "id": "7a8a6936-7de7-435b-a429-fba4fb59a4ea",
       "comment": "",
       "command": "open",
-      "target": "/",
+      "target": "https://qa.moodledemo.net/",
       "targets": [],
       "value": ""
     }, {
-      "id": "42f37d21-b828-4f01-9123-3fcc8f0b0638",
+      "id": "f828eb03-1725-4156-a5aa-b59b893e3e4c",
       "comment": "",
       "command": "setWindowSize",
       "target": "900x983",
       "targets": [],
       "value": ""
     }, {
-      "id": "f20060be-33cb-47da-91b4-cd1e0fbbda4b",
+      "id": "3fa391bc-e7ce-46e0-b281-dcc0c248529a",
       "comment": "",
       "command": "click",
-      "target": "linkText=Đăng nhập",
+      "target": "id=lang-menu-toggle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc69db3a-371e-430f-a175-00c9cf0861ba",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'English ‎(en)‎')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b10fc52-b29a-4396-b6c4-3364f6b4ec3f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
       "targets": [
         ["linkText=Đăng nhập", "linkText"],
         ["css=.login > a", "css:finder"],
@@ -627,7 +742,7 @@
       ],
       "value": ""
     }, {
-      "id": "8a1c3dc7-2394-4bdb-9ab0-e10242827478",
+      "id": "6971ce94-e3fa-4aee-b93a-096603f09711",
       "comment": "",
       "command": "click",
       "target": "css=.login-container",
@@ -638,7 +753,14 @@
       ],
       "value": ""
     }, {
-      "id": "300d6c13-e6c8-4e0d-871a-b775e43d854a",
+      "id": "4835423c-1b86-4f7a-bae2-652b769aecb2",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0245b26-9a89-4e58-aabf-9b67a2aaeb1f",
       "comment": "",
       "command": "type",
       "target": "id=username",
@@ -652,7 +774,7 @@
       ],
       "value": "teacher"
     }, {
-      "id": "50844f51-c847-4572-9f29-45d5c0a40233",
+      "id": "708d4335-c6f0-4da3-8f84-1a6b6b0b13e6",
       "comment": "",
       "command": "click",
       "target": "id=password",
@@ -666,7 +788,7 @@
       ],
       "value": ""
     }, {
-      "id": "310409a0-6d4a-4df3-95e7-857515937ff4",
+      "id": "c5a59637-5161-4723-8968-c5d465922a5a",
       "comment": "",
       "command": "type",
       "target": "id=password",
@@ -680,7 +802,7 @@
       ],
       "value": "moodle"
     }, {
-      "id": "8381f1a5-e46d-4484-bab5-721f73da915b",
+      "id": "3849e0dd-3d82-410d-97bb-e78adb474146",
       "comment": "",
       "command": "sendKeys",
       "target": "id=password",
@@ -694,7 +816,7 @@
       ],
       "value": "${KEY_ENTER}"
     }, {
-      "id": "29a5e37c-a04f-43b6-86ef-2a0574209682",
+      "id": "7b457ebb-8fc9-44fc-8289-a52895f69de7",
       "comment": "",
       "command": "click",
       "target": "id=loginbtn",
@@ -708,7 +830,7 @@
       ],
       "value": ""
     }, {
-      "id": "adc929a5-4230-47b9-a29d-ab8d25ff766d",
+      "id": "9a5ed5d0-1eb2-443c-9678-a720eb77f77f",
       "comment": "",
       "command": "click",
       "target": "xpath=//div/div/div/div/div/a/div",
@@ -719,7 +841,7 @@
       ],
       "value": ""
     }, {
-      "id": "cb135638-5b62-497f-b264-25ac6434759b",
+      "id": "66706c05-9f0c-4226-b31b-c22e5b53538b",
       "comment": "",
       "command": "click",
       "target": "name=setmode",
@@ -733,46 +855,63 @@
       ],
       "value": ""
     }, {
-      "id": "93f5e580-cd53-40c2-a321-263bca075831",
+      "id": "3de5c8fb-5335-49d9-806a-527dc4d21d14",
       "comment": "",
       "command": "click",
-      "target": "xpath=//div[8]",
-      "targets": [
-        ["css=#usernavigation > div:nth-child(9)", "css:finder"],
-        ["xpath=//div[@id='usernavigation']/div[8]", "xpath:idRelative"],
-        ["xpath=//div[8]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "2bebfa85-5b10-4ff0-b16b-1426add48915",
-      "comment": "",
-      "command": "click",
-      "target": "xpath=//li[9]/div/div[2]/ul/li/div[2]/div[2]/div[2]/div/div/span/a",
+      "target": "css=.modtype_h5pactivity > .activityname .stretched-link",
       "targets": [
         ["css=.modtype_h5pactivity > .activityname .stretched-link", "css:finder"],
-        ["xpath=(//a[@onclick=''])[20]", "xpath:attributes"],
+        ["xpath=(//a[@onclick=''])[18]", "xpath:attributes"],
         ["xpath=//li[@id='module-1013']/div[2]/div[2]/div[2]/div/div/span/a", "xpath:idRelative"],
         ["xpath=(//a[contains(@href, 'https://qa.moodledemo.net/mod/h5pactivity/view.php?id=1013')])[2]", "xpath:href"],
-        ["xpath=//li[9]/div/div[2]/ul/li/div[2]/div[2]/div[2]/div/div/span/a", "xpath:position"]
+        ["xpath=//li[8]/div/div[2]/ul/li/div[2]/div[2]/div[2]/div/div/span/a", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "cecbc369-168c-4385-b287-53cc60f46f56",
+      "id": "e04738c0-bfd5-4e5b-9a20-5a18fce64ef5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Edit H5P content",
+      "targets": [
+        ["linkText=Edit H5P content", "linkText"],
+        ["css=.text-primary:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='region-main']/div[2]/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/h5p/edit.php?url=https%3A%2F%2Fqa.moodledemo.net%2Fpluginfile.php%2F20011%2Fmod_h5pactivity%2Fpackage%2F0%2FVersion%25202%2520Global%2520warming-video-2-855973.h5p')]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,' Edit H5P content')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d2b6cdb-5f92-40ab-aeae-82aa4c84e305",
       "comment": "",
       "command": "click",
       "target": "linkText=Settings",
       "targets": [
         ["linkText=Settings", "linkText"],
-        ["css=#moremenu-6638bf83b196f-nav-tabs > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["css=#moremenu-663ad567ef609-nav-tabs > .nav-item:nth-child(2) > .nav-link", "css:finder"],
         ["xpath=//a[contains(text(),'Settings')]", "xpath:link"],
-        ["xpath=//ul[@id='moremenu-6638bf83b196f-nav-tabs']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//ul[@id='moremenu-663ad567ef609-nav-tabs']/li[2]/a", "xpath:idRelative"],
         ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/course/modedit.php?update=1013&return=1')]", "xpath:href"],
         ["xpath=//div[2]/nav/ul/li[2]/a", "xpath:position"],
         ["xpath=//a[contains(.,'Settings')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "e464ed4e-8658-43d4-922d-1a11690d2449",
+      "id": "718c35d8-544c-41d5-b5eb-010beb1e2c54",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,158.1818084716797)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d104d8db-0380-4d27-a89e-f35469d41c5d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,699.0908813476562)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "daa70f08-dc5b-426a-8f09-3b3abaa425c2",
       "comment": "",
       "command": "click",
       "target": "id=collapseElement-2",
@@ -781,13 +920,13 @@
         ["linkText=Grade", "linkText"],
         ["css=#collapseElement-2", "css:finder"],
         ["xpath=//a[@id='collapseElement-2']", "xpath:attributes"],
-        ["xpath=//div[@id='yui_3_18_1_1_1714995416654_874']/a", "xpath:idRelative"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715131758593_853']/a", "xpath:idRelative"],
         ["xpath=//a[contains(@href, '#id_modstandardgradecontainer')]", "xpath:href"],
         ["xpath=//fieldset[3]/div/div/a", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "f3b6e408-f16c-4679-94d9-1c80bac42e1d",
+      "id": "6b269ae3-35dc-47e4-8b72-b4861e222401",
       "comment": "",
       "command": "click",
       "target": "id=id_grade_modgrade_point",
@@ -796,12 +935,12 @@
         ["name=grade[modgrade_point]", "name"],
         ["css=#id_grade_modgrade_point", "css:finder"],
         ["xpath=//input[@id='id_grade_modgrade_point']", "xpath:attributes"],
-        ["xpath=//span[@id='yui_3_18_1_1_1714995416654_887']/input", "xpath:idRelative"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715131758593_865']/input", "xpath:idRelative"],
         ["xpath=//span/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "14043ed7-922b-4e0a-affd-c7ded4fe4bb8",
+      "id": "1296070a-7d91-4d9d-8f46-e231aeff6bc3",
       "comment": "",
       "command": "type",
       "target": "id=id_grade_modgrade_point",
@@ -810,12 +949,12 @@
         ["name=grade[modgrade_point]", "name"],
         ["css=#id_grade_modgrade_point", "css:finder"],
         ["xpath=//input[@id='id_grade_modgrade_point']", "xpath:attributes"],
-        ["xpath=//span[@id='yui_3_18_1_1_1714995416654_887']/input", "xpath:idRelative"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715131758593_865']/input", "xpath:idRelative"],
         ["xpath=//span/input", "xpath:position"]
       ],
-      "value": "99"
+      "value": "2"
     }, {
-      "id": "05018f04-b7f3-4751-aab4-0727ae538846",
+      "id": "d4efad4a-6d16-4a50-9c67-303cdacbd907",
       "comment": "",
       "command": "click",
       "target": "id=id_submitbutton",
@@ -824,15 +963,15 @@
         ["name=submitbutton", "name"],
         ["css=#id_submitbutton", "css:finder"],
         ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
-        ["xpath=//span[@id='yui_3_18_1_1_1714995416654_905']/input", "xpath:idRelative"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715131758593_880']/input", "xpath:idRelative"],
         ["xpath=//div[2]/span/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "f84d3496-13e0-4ae4-a060-1269755991a2",
+      "id": "9c8e0804-7c94-43de-9d87-55874a8279b9",
       "comment": "",
       "command": "click",
-      "target": "xpath=//section/div[2]",
+      "target": "css=#region-main > div:nth-child(4)",
       "targets": [
         ["css=#region-main > div:nth-child(4)", "css:finder"],
         ["xpath=//section[@id='region-main']/div[2]", "xpath:idRelative"],
@@ -840,19 +979,32 @@
       ],
       "value": ""
     }, {
-      "id": "97b16927-9539-40ba-8484-797e15ebc14f",
+      "id": "318d8a50-bdcd-4b46-82eb-673aba308c47",
       "comment": "",
       "command": "verifyText",
       "target": "xpath=//div[2]/h2",
       "targets": [
-        ["css=#yui_3_18_1_1_1714995560315_197 > h2", "css:finder"],
-        ["xpath=//div[@id='yui_3_18_1_1_1714995560315_197']/h2", "xpath:idRelative"],
+        ["css=#yui_3_18_1_1_1715132547844_196 > h2", "css:finder"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715132547844_196']/h2", "xpath:idRelative"],
         ["xpath=//div[2]/h2", "xpath:position"],
         ["xpath=//h2[contains(.,'Recalculating grades')]", "xpath:innerText"]
       ],
       "value": "Recalculating grades"
     }, {
-      "id": "fc62f151-76c3-45c7-b1a9-bf0d030303ff",
+      "id": "e1e66037-3d53-45a0-886e-80f41578ff38",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(text(),'H5P')])[3]",
+      "targets": [
+        ["css=#moremenu-663ad882baf5c-nav-tabs > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'H5P')])[3]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-663ad882baf5c-nav-tabs']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://qa.moodledemo.net/mod/h5pactivity/view.php?id=1013')])[2]", "xpath:href"],
+        ["xpath=//div[2]/nav/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c60ba6f7-b078-4dcf-9812-2e55c59454d9",
       "comment": "",
       "command": "click",
       "target": "id=user-menu-toggle",
@@ -866,7 +1018,7 @@
       ],
       "value": ""
     }, {
-      "id": "2fe547e2-93ed-436a-b5fb-46b5353181a8",
+      "id": "a843ab38-9ddf-497b-abe0-969e8fcf4998",
       "comment": "",
       "command": "click",
       "target": "linkText=Log out",
@@ -875,13 +1027,13 @@
         ["css=#carousel-item-main > .dropdown-item:nth-child(11)", "css:finder"],
         ["xpath=//a[contains(text(),'Log out')]", "xpath:link"],
         ["xpath=//div[@id='carousel-item-main']/a[9]", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/login/logout.php?sesskey=eWjDhnyuIm')]", "xpath:href"],
+        ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/login/logout.php?sesskey=2DqwBxHDni')]", "xpath:href"],
         ["xpath=//a[9]", "xpath:position"],
         ["xpath=//a[contains(.,'Log out')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "61c7a3c2-81c9-4eab-a4d6-3d7bd5d77994",
+      "id": "dd38ecc4-1d39-431d-8714-394908c04081",
       "comment": "",
       "command": "close",
       "target": "",
@@ -889,27 +1041,41 @@
       "value": ""
     }]
   }, {
-    "id": "bc23db61-c8c6-458e-9df7-2fae87b4fb41",
+    "id": "7bc6745b-4cca-4b21-8491-85f4d6064f5d",
     "name": "TC-363-021",
     "commands": [{
-      "id": "a74146db-0646-41b6-a675-522916804623",
+      "id": "a72260a3-987a-43e0-805f-551bd4095efc",
       "comment": "",
       "command": "open",
-      "target": "/",
+      "target": "https://qa.moodledemo.net/",
       "targets": [],
       "value": ""
     }, {
-      "id": "3258ba5c-c676-4da7-bccf-567a47f0c1b1",
+      "id": "58bf824a-f20a-4279-b241-939c7b18c12f",
       "comment": "",
       "command": "setWindowSize",
       "target": "900x983",
       "targets": [],
       "value": ""
     }, {
-      "id": "c46deafc-6449-4527-99d8-d3c91587b121",
+      "id": "ec0afdbb-db2d-4e06-8b86-2420d9fc3932",
       "comment": "",
       "command": "click",
-      "target": "linkText=Đăng nhập",
+      "target": "id=lang-menu-toggle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03385fc1-fef5-4722-93a9-f9a2d81a8846",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'English ‎(en)‎')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1bf14ca1-772c-45c1-9742-66345b8001e6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
       "targets": [
         ["linkText=Đăng nhập", "linkText"],
         ["css=.login > a", "css:finder"],
@@ -921,7 +1087,7 @@
       ],
       "value": ""
     }, {
-      "id": "5fc3482a-f9e3-4f91-b3e2-fb2d3626922b",
+      "id": "5783c8be-f504-4c62-9a59-3377fe575f86",
       "comment": "",
       "command": "click",
       "target": "css=.login-container",
@@ -932,7 +1098,14 @@
       ],
       "value": ""
     }, {
-      "id": "87950e63-54ec-469d-93d6-5ec7a70712f3",
+      "id": "168c1c77-7a61-41de-b848-e8b3acebe817",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07b66311-a68b-474a-9b4b-5dee6a854dc8",
       "comment": "",
       "command": "type",
       "target": "id=username",
@@ -946,7 +1119,7 @@
       ],
       "value": "teacher"
     }, {
-      "id": "8a20e575-c368-4ab0-aef8-64a87a97a1a5",
+      "id": "20c3216a-6f1f-4e8f-ad0a-0ed9939c9a32",
       "comment": "",
       "command": "click",
       "target": "id=password",
@@ -960,7 +1133,7 @@
       ],
       "value": ""
     }, {
-      "id": "e72862e0-c867-4ead-861e-a96290fc4cf7",
+      "id": "6ba372a3-c05c-4d9a-a3e5-c2877c409ca4",
       "comment": "",
       "command": "type",
       "target": "id=password",
@@ -974,7 +1147,7 @@
       ],
       "value": "moodle"
     }, {
-      "id": "b56b4c3b-3fbd-455f-9b4e-0f235a9d7d8e",
+      "id": "c0c91cc0-24da-4863-8a19-af002312b490",
       "comment": "",
       "command": "sendKeys",
       "target": "id=password",
@@ -988,7 +1161,7 @@
       ],
       "value": "${KEY_ENTER}"
     }, {
-      "id": "fd2ebe0c-f1c7-4eaa-bb52-56c1837e385c",
+      "id": "f42db82a-96dc-4d20-80fe-b7bb978607d6",
       "comment": "",
       "command": "click",
       "target": "id=loginbtn",
@@ -1002,7 +1175,7 @@
       ],
       "value": ""
     }, {
-      "id": "7ce6a3a8-ad51-4d67-9636-31ced95283a6",
+      "id": "25f09624-0f54-4ce3-be38-c0949ca01230",
       "comment": "",
       "command": "click",
       "target": "xpath=//div/div/div/div/div/a/div",
@@ -1013,7 +1186,7 @@
       ],
       "value": ""
     }, {
-      "id": "11a86936-7497-426f-a75a-a2e44983162d",
+      "id": "e1b68434-168e-4c11-97cb-99c1b8e601a3",
       "comment": "",
       "command": "click",
       "target": "name=setmode",
@@ -1027,46 +1200,63 @@
       ],
       "value": ""
     }, {
-      "id": "0a002601-34fe-4046-b83e-f4dcb2640284",
+      "id": "32a23626-a91c-4709-915e-89e6bc48cbd0",
       "comment": "",
       "command": "click",
-      "target": "xpath=//div[8]",
-      "targets": [
-        ["css=#usernavigation > div:nth-child(9)", "css:finder"],
-        ["xpath=//div[@id='usernavigation']/div[8]", "xpath:idRelative"],
-        ["xpath=//div[8]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "c8f11ded-77b5-406f-86cf-379cc9b0f0a5",
-      "comment": "",
-      "command": "click",
-      "target": "xpath=//li[9]/div/div[2]/ul/li/div[2]/div[2]/div[2]/div/div/span/a",
+      "target": "css=.modtype_h5pactivity > .activityname .stretched-link",
       "targets": [
         ["css=.modtype_h5pactivity > .activityname .stretched-link", "css:finder"],
-        ["xpath=(//a[@onclick=''])[20]", "xpath:attributes"],
+        ["xpath=(//a[@onclick=''])[18]", "xpath:attributes"],
         ["xpath=//li[@id='module-1013']/div[2]/div[2]/div[2]/div/div/span/a", "xpath:idRelative"],
         ["xpath=(//a[contains(@href, 'https://qa.moodledemo.net/mod/h5pactivity/view.php?id=1013')])[2]", "xpath:href"],
-        ["xpath=//li[9]/div/div[2]/ul/li/div[2]/div[2]/div[2]/div/div/span/a", "xpath:position"]
+        ["xpath=//li[8]/div/div[2]/ul/li/div[2]/div[2]/div[2]/div/div/span/a", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "7778bb24-3a5f-48fd-926f-9bd6adbe1146",
+      "id": "27fe84bd-66f0-47ce-8ad5-393fb8ca9553",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Edit H5P content",
+      "targets": [
+        ["linkText=Edit H5P content", "linkText"],
+        ["css=.text-primary:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='region-main']/div[2]/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/h5p/edit.php?url=https%3A%2F%2Fqa.moodledemo.net%2Fpluginfile.php%2F20011%2Fmod_h5pactivity%2Fpackage%2F0%2FVersion%25202%2520Global%2520warming-video-2-855973.h5p')]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,' Edit H5P content')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8810252-aa98-443f-9ecb-f790f2135dd0",
       "comment": "",
       "command": "click",
       "target": "linkText=Settings",
       "targets": [
         ["linkText=Settings", "linkText"],
-        ["css=#moremenu-6638bf83b196f-nav-tabs > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["css=#moremenu-663ad567ef609-nav-tabs > .nav-item:nth-child(2) > .nav-link", "css:finder"],
         ["xpath=//a[contains(text(),'Settings')]", "xpath:link"],
-        ["xpath=//ul[@id='moremenu-6638bf83b196f-nav-tabs']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//ul[@id='moremenu-663ad567ef609-nav-tabs']/li[2]/a", "xpath:idRelative"],
         ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/course/modedit.php?update=1013&return=1')]", "xpath:href"],
         ["xpath=//div[2]/nav/ul/li[2]/a", "xpath:position"],
         ["xpath=//a[contains(.,'Settings')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "31354765-8406-4df6-9fba-d6989625161e",
+      "id": "5e94bc0b-ca1d-4cb5-9c4a-565fe17a3bd9",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,158.1818084716797)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6e4c2c6-710a-4e48-9e2c-f8bee74cb7d0",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,699.0908813476562)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb390f62-6c7a-44a4-b911-5352728e8164",
       "comment": "",
       "command": "click",
       "target": "id=collapseElement-2",
@@ -1075,13 +1265,13 @@
         ["linkText=Grade", "linkText"],
         ["css=#collapseElement-2", "css:finder"],
         ["xpath=//a[@id='collapseElement-2']", "xpath:attributes"],
-        ["xpath=//div[@id='yui_3_18_1_1_1714995416654_874']/a", "xpath:idRelative"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715131758593_853']/a", "xpath:idRelative"],
         ["xpath=//a[contains(@href, '#id_modstandardgradecontainer')]", "xpath:href"],
         ["xpath=//fieldset[3]/div/div/a", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "ce182dd0-a329-4079-8740-b29ea1aa6c93",
+      "id": "554b191e-ee8f-438c-899b-5881feb07b1e",
       "comment": "",
       "command": "click",
       "target": "id=id_grade_modgrade_point",
@@ -1090,12 +1280,12 @@
         ["name=grade[modgrade_point]", "name"],
         ["css=#id_grade_modgrade_point", "css:finder"],
         ["xpath=//input[@id='id_grade_modgrade_point']", "xpath:attributes"],
-        ["xpath=//span[@id='yui_3_18_1_1_1714995416654_887']/input", "xpath:idRelative"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715131758593_865']/input", "xpath:idRelative"],
         ["xpath=//span/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "c243e6c4-374e-409e-8e88-7710f0176830",
+      "id": "13ea5ce6-6018-4dee-badc-630f82c92464",
       "comment": "",
       "command": "type",
       "target": "id=id_grade_modgrade_point",
@@ -1104,12 +1294,12 @@
         ["name=grade[modgrade_point]", "name"],
         ["css=#id_grade_modgrade_point", "css:finder"],
         ["xpath=//input[@id='id_grade_modgrade_point']", "xpath:attributes"],
-        ["xpath=//span[@id='yui_3_18_1_1_1714995416654_887']/input", "xpath:idRelative"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715131758593_865']/input", "xpath:idRelative"],
         ["xpath=//span/input", "xpath:position"]
       ],
       "value": "99"
     }, {
-      "id": "5feb084a-2f7c-483c-ae1b-77dbcfbffdc0",
+      "id": "adaa4b5e-e783-4a7f-b713-4923dcfe5e12",
       "comment": "",
       "command": "click",
       "target": "id=id_submitbutton",
@@ -1118,15 +1308,15 @@
         ["name=submitbutton", "name"],
         ["css=#id_submitbutton", "css:finder"],
         ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
-        ["xpath=//span[@id='yui_3_18_1_1_1714995416654_905']/input", "xpath:idRelative"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715131758593_880']/input", "xpath:idRelative"],
         ["xpath=//div[2]/span/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "068b6cac-3a44-4e89-a6ba-ae2724b33669",
+      "id": "0a7d8511-c7b2-4dc1-ad8b-becfb8886d56",
       "comment": "",
       "command": "click",
-      "target": "xpath=//section/div[2]",
+      "target": "css=#region-main > div:nth-child(4)",
       "targets": [
         ["css=#region-main > div:nth-child(4)", "css:finder"],
         ["xpath=//section[@id='region-main']/div[2]", "xpath:idRelative"],
@@ -1134,19 +1324,32 @@
       ],
       "value": ""
     }, {
-      "id": "c5159bdf-00c2-4f85-ab6d-2c500c6eea99",
+      "id": "cbae44e9-c44c-41fd-b552-fffc13b3bf66",
       "comment": "",
       "command": "verifyText",
       "target": "xpath=//div[2]/h2",
       "targets": [
-        ["css=#yui_3_18_1_1_1714995560315_197 > h2", "css:finder"],
-        ["xpath=//div[@id='yui_3_18_1_1_1714995560315_197']/h2", "xpath:idRelative"],
+        ["css=#yui_3_18_1_1_1715132547844_196 > h2", "css:finder"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715132547844_196']/h2", "xpath:idRelative"],
         ["xpath=//div[2]/h2", "xpath:position"],
         ["xpath=//h2[contains(.,'Recalculating grades')]", "xpath:innerText"]
       ],
       "value": "Recalculating grades"
     }, {
-      "id": "8969a6b6-c1bc-4473-9f55-496e8646da1e",
+      "id": "b7ed89c6-1f6a-4b9e-a54f-96cc3c1d3882",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(text(),'H5P')])[3]",
+      "targets": [
+        ["css=#moremenu-663ad882baf5c-nav-tabs > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'H5P')])[3]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-663ad882baf5c-nav-tabs']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://qa.moodledemo.net/mod/h5pactivity/view.php?id=1013')])[2]", "xpath:href"],
+        ["xpath=//div[2]/nav/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b15e0b59-f426-4ee3-ac5b-3467efb2a36d",
       "comment": "",
       "command": "click",
       "target": "id=user-menu-toggle",
@@ -1160,7 +1363,7 @@
       ],
       "value": ""
     }, {
-      "id": "8bbf7dd8-0319-46a2-b8d2-a24bd3329c30",
+      "id": "aca164bb-ef54-4595-9b5e-9e2c5b63ed2a",
       "comment": "",
       "command": "click",
       "target": "linkText=Log out",
@@ -1169,13 +1372,13 @@
         ["css=#carousel-item-main > .dropdown-item:nth-child(11)", "css:finder"],
         ["xpath=//a[contains(text(),'Log out')]", "xpath:link"],
         ["xpath=//div[@id='carousel-item-main']/a[9]", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/login/logout.php?sesskey=eWjDhnyuIm')]", "xpath:href"],
+        ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/login/logout.php?sesskey=2DqwBxHDni')]", "xpath:href"],
         ["xpath=//a[9]", "xpath:position"],
         ["xpath=//a[contains(.,'Log out')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "85afd3ad-4595-4ba4-a39f-1969b114bc34",
+      "id": "0206b012-dc9f-478b-b34e-e74b60e54cdd",
       "comment": "",
       "command": "close",
       "target": "",
@@ -1183,27 +1386,41 @@
       "value": ""
     }]
   }, {
-    "id": "18342199-9e91-4f08-aea9-5f5d950716b2",
+    "id": "a32fa545-7ac4-4ee4-81aa-9d9747d0fa3d",
     "name": "TC-363-022",
     "commands": [{
-      "id": "2a03aa0f-bb62-4af4-b257-cce50131410a",
+      "id": "b6ee4389-5e3c-4594-8eb7-c66378835487",
       "comment": "",
       "command": "open",
-      "target": "/",
+      "target": "https://qa.moodledemo.net/",
       "targets": [],
       "value": ""
     }, {
-      "id": "bce953fc-4e29-4502-b6ec-7ae3d6e395d2",
+      "id": "7f5b0140-cc60-44a9-b201-16bb68e1bb98",
       "comment": "",
       "command": "setWindowSize",
       "target": "900x983",
       "targets": [],
       "value": ""
     }, {
-      "id": "e0fc2c5c-b543-40fb-8828-016f8d52f3f2",
+      "id": "e2f84838-03fa-4e0d-ae22-97a0c8774cf8",
       "comment": "",
       "command": "click",
-      "target": "linkText=Đăng nhập",
+      "target": "id=lang-menu-toggle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc65c977-67c9-4b04-a90b-4422b943abc6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'English ‎(en)‎')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8496d22e-6696-456b-b6c8-e172345b3cbe",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
       "targets": [
         ["linkText=Đăng nhập", "linkText"],
         ["css=.login > a", "css:finder"],
@@ -1215,7 +1432,7 @@
       ],
       "value": ""
     }, {
-      "id": "12e1480a-b775-4352-8eb4-0d8058f964bf",
+      "id": "604f3982-d67b-4fe3-b662-424e8680e2d8",
       "comment": "",
       "command": "click",
       "target": "css=.login-container",
@@ -1226,7 +1443,14 @@
       ],
       "value": ""
     }, {
-      "id": "874210f0-ae37-444d-a0a8-aef3faa324bb",
+      "id": "003c6991-94ab-4aa7-8dc4-8ac59cd33477",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3e0f42e-56aa-4c2d-8a02-f42a005844a3",
       "comment": "",
       "command": "type",
       "target": "id=username",
@@ -1240,7 +1464,7 @@
       ],
       "value": "teacher"
     }, {
-      "id": "53cd82f6-5ad2-4924-a196-02199f492dfa",
+      "id": "43d8c2c3-c28c-4982-b84c-bf9817be0897",
       "comment": "",
       "command": "click",
       "target": "id=password",
@@ -1254,7 +1478,7 @@
       ],
       "value": ""
     }, {
-      "id": "6d45bb0d-d580-4bcb-b9ab-6d900a070007",
+      "id": "57b2d5b0-3ff0-4d8c-95de-38f08ff76b4d",
       "comment": "",
       "command": "type",
       "target": "id=password",
@@ -1268,7 +1492,7 @@
       ],
       "value": "moodle"
     }, {
-      "id": "1a413ac5-475a-45f4-8c93-cce7fa182b4c",
+      "id": "d5dae8b8-2959-410f-8685-79d039f43993",
       "comment": "",
       "command": "sendKeys",
       "target": "id=password",
@@ -1282,7 +1506,7 @@
       ],
       "value": "${KEY_ENTER}"
     }, {
-      "id": "43a3c9e8-8184-4ee5-a730-9b32d178619a",
+      "id": "0f719d54-e969-423f-b072-6c2a6730e1e4",
       "comment": "",
       "command": "click",
       "target": "id=loginbtn",
@@ -1296,7 +1520,7 @@
       ],
       "value": ""
     }, {
-      "id": "951441ef-3fc9-4f91-ae2e-741915f9ed77",
+      "id": "3deab48e-f29d-40d1-b69e-5e49e4dd0aad",
       "comment": "",
       "command": "click",
       "target": "xpath=//div/div/div/div/div/a/div",
@@ -1307,7 +1531,7 @@
       ],
       "value": ""
     }, {
-      "id": "2c380956-70e3-435d-a4c3-292a143d656b",
+      "id": "03983552-51dd-45bc-a4f9-8524cc1b61e9",
       "comment": "",
       "command": "click",
       "target": "name=setmode",
@@ -1321,46 +1545,63 @@
       ],
       "value": ""
     }, {
-      "id": "4c65961e-a919-4683-91f0-74abff22969a",
+      "id": "e894f83a-8ca0-4cb5-acbb-c2c3103a0a7b",
       "comment": "",
       "command": "click",
-      "target": "xpath=//div[8]",
-      "targets": [
-        ["css=#usernavigation > div:nth-child(9)", "css:finder"],
-        ["xpath=//div[@id='usernavigation']/div[8]", "xpath:idRelative"],
-        ["xpath=//div[8]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "55ca7c95-947e-4169-99bc-9de661177564",
-      "comment": "",
-      "command": "click",
-      "target": "xpath=//li[9]/div/div[2]/ul/li/div[2]/div[2]/div[2]/div/div/span/a",
+      "target": "css=.modtype_h5pactivity > .activityname .stretched-link",
       "targets": [
         ["css=.modtype_h5pactivity > .activityname .stretched-link", "css:finder"],
-        ["xpath=(//a[@onclick=''])[20]", "xpath:attributes"],
+        ["xpath=(//a[@onclick=''])[18]", "xpath:attributes"],
         ["xpath=//li[@id='module-1013']/div[2]/div[2]/div[2]/div/div/span/a", "xpath:idRelative"],
         ["xpath=(//a[contains(@href, 'https://qa.moodledemo.net/mod/h5pactivity/view.php?id=1013')])[2]", "xpath:href"],
-        ["xpath=//li[9]/div/div[2]/ul/li/div[2]/div[2]/div[2]/div/div/span/a", "xpath:position"]
+        ["xpath=//li[8]/div/div[2]/ul/li/div[2]/div[2]/div[2]/div/div/span/a", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "08a27c2a-f77d-4312-a39a-55db2dd8dc86",
+      "id": "c4dc2b0e-aab0-4f6f-9188-4993bf256c03",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Edit H5P content",
+      "targets": [
+        ["linkText=Edit H5P content", "linkText"],
+        ["css=.text-primary:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='region-main']/div[2]/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/h5p/edit.php?url=https%3A%2F%2Fqa.moodledemo.net%2Fpluginfile.php%2F20011%2Fmod_h5pactivity%2Fpackage%2F0%2FVersion%25202%2520Global%2520warming-video-2-855973.h5p')]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,' Edit H5P content')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3ffbef3-011f-4166-a5d9-2fe45216af63",
       "comment": "",
       "command": "click",
       "target": "linkText=Settings",
       "targets": [
         ["linkText=Settings", "linkText"],
-        ["css=#moremenu-6638bf83b196f-nav-tabs > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["css=#moremenu-663ad567ef609-nav-tabs > .nav-item:nth-child(2) > .nav-link", "css:finder"],
         ["xpath=//a[contains(text(),'Settings')]", "xpath:link"],
-        ["xpath=//ul[@id='moremenu-6638bf83b196f-nav-tabs']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//ul[@id='moremenu-663ad567ef609-nav-tabs']/li[2]/a", "xpath:idRelative"],
         ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/course/modedit.php?update=1013&return=1')]", "xpath:href"],
         ["xpath=//div[2]/nav/ul/li[2]/a", "xpath:position"],
         ["xpath=//a[contains(.,'Settings')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "2b9d9007-7b67-4ee2-a271-2a74eee5fd7a",
+      "id": "1ecb8791-31ec-4ef5-93c5-57ff48957683",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,158.1818084716797)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ef876b0-0666-4362-b623-83b38b5761f4",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,699.0908813476562)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7594e2b5-446c-4182-99e6-ef173ea7a9bd",
       "comment": "",
       "command": "click",
       "target": "id=collapseElement-2",
@@ -1369,13 +1610,13 @@
         ["linkText=Grade", "linkText"],
         ["css=#collapseElement-2", "css:finder"],
         ["xpath=//a[@id='collapseElement-2']", "xpath:attributes"],
-        ["xpath=//div[@id='yui_3_18_1_1_1714995416654_874']/a", "xpath:idRelative"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715131758593_853']/a", "xpath:idRelative"],
         ["xpath=//a[contains(@href, '#id_modstandardgradecontainer')]", "xpath:href"],
         ["xpath=//fieldset[3]/div/div/a", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "efdcdf66-d4ef-4e81-92df-7ddd5a9b298e",
+      "id": "2a561f59-d95a-4721-b1d1-26b3a0095831",
       "comment": "",
       "command": "click",
       "target": "id=id_grade_modgrade_point",
@@ -1384,12 +1625,12 @@
         ["name=grade[modgrade_point]", "name"],
         ["css=#id_grade_modgrade_point", "css:finder"],
         ["xpath=//input[@id='id_grade_modgrade_point']", "xpath:attributes"],
-        ["xpath=//span[@id='yui_3_18_1_1_1714995416654_887']/input", "xpath:idRelative"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715131758593_865']/input", "xpath:idRelative"],
         ["xpath=//span/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "a368506a-ea7b-4781-bec7-5767c1959886",
+      "id": "aee5ef9a-26af-4615-a4d7-b1cf019ffbcc",
       "comment": "",
       "command": "type",
       "target": "id=id_grade_modgrade_point",
@@ -1398,12 +1639,12 @@
         ["name=grade[modgrade_point]", "name"],
         ["css=#id_grade_modgrade_point", "css:finder"],
         ["xpath=//input[@id='id_grade_modgrade_point']", "xpath:attributes"],
-        ["xpath=//span[@id='yui_3_18_1_1_1714995416654_887']/input", "xpath:idRelative"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715131758593_865']/input", "xpath:idRelative"],
         ["xpath=//span/input", "xpath:position"]
       ],
       "value": "100"
     }, {
-      "id": "2199f27c-93b5-49a4-adf5-3520ea37a2be",
+      "id": "c7767d3b-9166-4a0f-85aa-a91a1fb81111",
       "comment": "",
       "command": "click",
       "target": "id=id_submitbutton",
@@ -1412,15 +1653,15 @@
         ["name=submitbutton", "name"],
         ["css=#id_submitbutton", "css:finder"],
         ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
-        ["xpath=//span[@id='yui_3_18_1_1_1714995416654_905']/input", "xpath:idRelative"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715131758593_880']/input", "xpath:idRelative"],
         ["xpath=//div[2]/span/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "2887986b-e721-434f-bfcf-3474ccbf76bc",
+      "id": "28dbf7de-8bc3-42b1-a6e9-c15af74d4ab6",
       "comment": "",
       "command": "click",
-      "target": "xpath=//section/div[2]",
+      "target": "css=#region-main > div:nth-child(4)",
       "targets": [
         ["css=#region-main > div:nth-child(4)", "css:finder"],
         ["xpath=//section[@id='region-main']/div[2]", "xpath:idRelative"],
@@ -1428,19 +1669,32 @@
       ],
       "value": ""
     }, {
-      "id": "554a534a-b6e9-4210-92b5-47cc1a9cb20a",
+      "id": "be3e8f09-68fc-4dc9-840d-c284bd06deb9",
       "comment": "",
       "command": "verifyText",
       "target": "xpath=//div[2]/h2",
       "targets": [
-        ["css=#yui_3_18_1_1_1714995560315_197 > h2", "css:finder"],
-        ["xpath=//div[@id='yui_3_18_1_1_1714995560315_197']/h2", "xpath:idRelative"],
+        ["css=#yui_3_18_1_1_1715132547844_196 > h2", "css:finder"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715132547844_196']/h2", "xpath:idRelative"],
         ["xpath=//div[2]/h2", "xpath:position"],
         ["xpath=//h2[contains(.,'Recalculating grades')]", "xpath:innerText"]
       ],
       "value": "Recalculating grades"
     }, {
-      "id": "ee703422-cd8f-4bf8-8d5b-fe55b81486fb",
+      "id": "4dbcf1bd-8b27-4926-ac77-f23ef808798c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(text(),'H5P')])[3]",
+      "targets": [
+        ["css=#moremenu-663ad882baf5c-nav-tabs > .nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'H5P')])[3]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-663ad882baf5c-nav-tabs']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://qa.moodledemo.net/mod/h5pactivity/view.php?id=1013')])[2]", "xpath:href"],
+        ["xpath=//div[2]/nav/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "403061f4-3954-4627-b85d-d312c619a1d1",
       "comment": "",
       "command": "click",
       "target": "id=user-menu-toggle",
@@ -1454,7 +1708,7 @@
       ],
       "value": ""
     }, {
-      "id": "a06592a0-be31-4f40-8626-57d7b379a300",
+      "id": "130f51bf-0864-424b-b7cc-7fc4f7963829",
       "comment": "",
       "command": "click",
       "target": "linkText=Log out",
@@ -1463,13 +1717,13 @@
         ["css=#carousel-item-main > .dropdown-item:nth-child(11)", "css:finder"],
         ["xpath=//a[contains(text(),'Log out')]", "xpath:link"],
         ["xpath=//div[@id='carousel-item-main']/a[9]", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/login/logout.php?sesskey=eWjDhnyuIm')]", "xpath:href"],
+        ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/login/logout.php?sesskey=2DqwBxHDni')]", "xpath:href"],
         ["xpath=//a[9]", "xpath:position"],
         ["xpath=//a[contains(.,'Log out')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "f27e995d-cd52-4d53-8b95-5ebaa1052a5d",
+      "id": "76c97a87-087f-4794-8c83-b7704d4fd16c",
       "comment": "",
       "command": "close",
       "target": "",
@@ -1477,27 +1731,41 @@
       "value": ""
     }]
   }, {
-    "id": "ced759eb-3372-4003-9999-728bd13869c7",
+    "id": "1124d10f-467e-406d-a3a2-60f095ce7426",
     "name": "TC-363-023",
     "commands": [{
-      "id": "80d9ebf6-6a10-42db-ba60-f576621e6808",
+      "id": "a3035653-39cf-4d77-ada9-dc5e0dc3f898",
       "comment": "",
       "command": "open",
-      "target": "/",
+      "target": "https://qa.moodledemo.net/",
       "targets": [],
       "value": ""
     }, {
-      "id": "741e77e7-16c3-4b88-8778-0105f50d5354",
+      "id": "d21bc13e-6b92-4d47-8b25-699497727b96",
       "comment": "",
       "command": "setWindowSize",
       "target": "900x983",
       "targets": [],
       "value": ""
     }, {
-      "id": "fbf325e2-b961-468b-b8af-1cf8d62e3556",
+      "id": "b4fead73-5d2a-497d-add1-2580ebc74a63",
       "comment": "",
       "command": "click",
-      "target": "linkText=Đăng nhập",
+      "target": "id=lang-menu-toggle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82bb2a78-a54e-4a65-96a7-d750f045cbf2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'English ‎(en)‎')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b56d8c30-8a2b-4948-9e78-09a5f701fa4c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
       "targets": [
         ["linkText=Đăng nhập", "linkText"],
         ["css=.login > a", "css:finder"],
@@ -1509,7 +1777,7 @@
       ],
       "value": ""
     }, {
-      "id": "001fbf76-014f-41a5-bae9-b245e8b932f5",
+      "id": "da16cba6-ad8d-409f-a3d0-408ce94f2d37",
       "comment": "",
       "command": "click",
       "target": "css=.login-container",
@@ -1520,7 +1788,14 @@
       ],
       "value": ""
     }, {
-      "id": "4b7f3291-1fd7-422a-b89e-300a4345fac9",
+      "id": "9a8fde31-8092-4b84-8110-befd1891e32b",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3f4e7e4-fd25-4003-82a8-0e2eb829c41a",
       "comment": "",
       "command": "type",
       "target": "id=username",
@@ -1534,7 +1809,7 @@
       ],
       "value": "teacher"
     }, {
-      "id": "ee526cd0-1240-43b4-9b0c-f4bdc283d0a2",
+      "id": "ce85e964-c107-431a-a9e2-bd02f5b816b0",
       "comment": "",
       "command": "click",
       "target": "id=password",
@@ -1548,7 +1823,7 @@
       ],
       "value": ""
     }, {
-      "id": "4a979bb3-755a-43ac-b3c9-a8a2efe48923",
+      "id": "1830946d-8089-408e-aaeb-ac2f901b5006",
       "comment": "",
       "command": "type",
       "target": "id=password",
@@ -1562,7 +1837,7 @@
       ],
       "value": "moodle"
     }, {
-      "id": "355fd700-d1b8-466e-9f6e-bc4e2009e7b1",
+      "id": "ff4d26dc-0a5d-4a46-a065-94c4b746181e",
       "comment": "",
       "command": "sendKeys",
       "target": "id=password",
@@ -1576,7 +1851,7 @@
       ],
       "value": "${KEY_ENTER}"
     }, {
-      "id": "c2b887a5-b8d3-4678-9f05-a28363b4ecfe",
+      "id": "a009e7db-91d4-4f13-a301-d4e8bf10d618",
       "comment": "",
       "command": "click",
       "target": "id=loginbtn",
@@ -1590,7 +1865,7 @@
       ],
       "value": ""
     }, {
-      "id": "d23fbc2d-9b39-4719-9a67-227e13c33e97",
+      "id": "75352fa7-8fe2-4d78-a3c9-3d50f8fa2cb4",
       "comment": "",
       "command": "click",
       "target": "xpath=//div/div/div/div/div/a/div",
@@ -1601,7 +1876,7 @@
       ],
       "value": ""
     }, {
-      "id": "a9f328b3-55de-4335-8da8-1cd4bdbcd42a",
+      "id": "28235e1b-84c0-4d46-8550-eedb705f568b",
       "comment": "",
       "command": "click",
       "target": "name=setmode",
@@ -1615,46 +1890,63 @@
       ],
       "value": ""
     }, {
-      "id": "57f76bed-64a4-42d2-8310-0270fa850788",
+      "id": "095784cb-7460-40b0-a21a-fbcbf3b1d27e",
       "comment": "",
       "command": "click",
-      "target": "xpath=//div[8]",
-      "targets": [
-        ["css=#usernavigation > div:nth-child(9)", "css:finder"],
-        ["xpath=//div[@id='usernavigation']/div[8]", "xpath:idRelative"],
-        ["xpath=//div[8]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "dd0f2d81-af2a-4931-ba3f-d1e58592d6ce",
-      "comment": "",
-      "command": "click",
-      "target": "xpath=//li[9]/div/div[2]/ul/li/div[2]/div[2]/div[2]/div/div/span/a",
+      "target": "css=.modtype_h5pactivity > .activityname .stretched-link",
       "targets": [
         ["css=.modtype_h5pactivity > .activityname .stretched-link", "css:finder"],
-        ["xpath=(//a[@onclick=''])[20]", "xpath:attributes"],
+        ["xpath=(//a[@onclick=''])[18]", "xpath:attributes"],
         ["xpath=//li[@id='module-1013']/div[2]/div[2]/div[2]/div/div/span/a", "xpath:idRelative"],
         ["xpath=(//a[contains(@href, 'https://qa.moodledemo.net/mod/h5pactivity/view.php?id=1013')])[2]", "xpath:href"],
-        ["xpath=//li[9]/div/div[2]/ul/li/div[2]/div[2]/div[2]/div/div/span/a", "xpath:position"]
+        ["xpath=//li[8]/div/div[2]/ul/li/div[2]/div[2]/div[2]/div/div/span/a", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "39d9afe1-dc5e-4fa6-8a2f-605bdb764c65",
+      "id": "07a65d1a-7316-40f3-a576-a277ce695daa",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Edit H5P content",
+      "targets": [
+        ["linkText=Edit H5P content", "linkText"],
+        ["css=.text-primary:nth-child(2)", "css:finder"],
+        ["xpath=//section[@id='region-main']/div[2]/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/h5p/edit.php?url=https%3A%2F%2Fqa.moodledemo.net%2Fpluginfile.php%2F20011%2Fmod_h5pactivity%2Fpackage%2F0%2FVersion%25202%2520Global%2520warming-video-2-855973.h5p')]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,' Edit H5P content')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0e48b1a-8849-4b6f-8e7a-3df54966595b",
       "comment": "",
       "command": "click",
       "target": "linkText=Settings",
       "targets": [
         ["linkText=Settings", "linkText"],
-        ["css=#moremenu-6638bf83b196f-nav-tabs > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["css=#moremenu-663ad567ef609-nav-tabs > .nav-item:nth-child(2) > .nav-link", "css:finder"],
         ["xpath=//a[contains(text(),'Settings')]", "xpath:link"],
-        ["xpath=//ul[@id='moremenu-6638bf83b196f-nav-tabs']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//ul[@id='moremenu-663ad567ef609-nav-tabs']/li[2]/a", "xpath:idRelative"],
         ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/course/modedit.php?update=1013&return=1')]", "xpath:href"],
         ["xpath=//div[2]/nav/ul/li[2]/a", "xpath:position"],
         ["xpath=//a[contains(.,'Settings')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "53b75fdb-e96d-42ea-817c-b06b3628a26b",
+      "id": "37b09b18-b920-4995-84d2-86b7d8f12f5a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,158.1818084716797)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ed15fc6-4b25-4665-ab1d-625be2ca99f9",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,699.0908813476562)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d2c7ff1-dbbc-4c90-844a-5f0143f46590",
       "comment": "",
       "command": "click",
       "target": "id=collapseElement-2",
@@ -1663,13 +1955,13 @@
         ["linkText=Grade", "linkText"],
         ["css=#collapseElement-2", "css:finder"],
         ["xpath=//a[@id='collapseElement-2']", "xpath:attributes"],
-        ["xpath=//div[@id='yui_3_18_1_1_1714995416654_874']/a", "xpath:idRelative"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715131758593_853']/a", "xpath:idRelative"],
         ["xpath=//a[contains(@href, '#id_modstandardgradecontainer')]", "xpath:href"],
         ["xpath=//fieldset[3]/div/div/a", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "6e1e77d8-28e2-44b7-ac6a-ab2f2519d17a",
+      "id": "a6d19bae-b7a5-4165-9689-243e90ecf09f",
       "comment": "",
       "command": "click",
       "target": "id=id_grade_modgrade_point",
@@ -1678,12 +1970,12 @@
         ["name=grade[modgrade_point]", "name"],
         ["css=#id_grade_modgrade_point", "css:finder"],
         ["xpath=//input[@id='id_grade_modgrade_point']", "xpath:attributes"],
-        ["xpath=//span[@id='yui_3_18_1_1_1714995416654_887']/input", "xpath:idRelative"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715131758593_865']/input", "xpath:idRelative"],
         ["xpath=//span/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "1e6d0d40-543f-4640-a26e-c53fa92b25d4",
+      "id": "502e011b-67df-4f16-878b-a97da01b4f73",
       "comment": "",
       "command": "type",
       "target": "id=id_grade_modgrade_point",
@@ -1692,12 +1984,12 @@
         ["name=grade[modgrade_point]", "name"],
         ["css=#id_grade_modgrade_point", "css:finder"],
         ["xpath=//input[@id='id_grade_modgrade_point']", "xpath:attributes"],
-        ["xpath=//span[@id='yui_3_18_1_1_1714995416654_887']/input", "xpath:idRelative"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715131758593_865']/input", "xpath:idRelative"],
         ["xpath=//span/input", "xpath:position"]
       ],
       "value": "101"
     }, {
-      "id": "a639431d-8b08-449d-aacf-e178ba82718d",
+      "id": "a5c73d09-bbed-43f0-97f5-b3ca7e3f16de",
       "comment": "",
       "command": "click",
       "target": "id=id_submitbutton",
@@ -1706,12 +1998,12 @@
         ["name=submitbutton", "name"],
         ["css=#id_submitbutton", "css:finder"],
         ["xpath=//input[@id='id_submitbutton']", "xpath:attributes"],
-        ["xpath=//span[@id='yui_3_18_1_1_1714995416654_905']/input", "xpath:idRelative"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715131758593_880']/input", "xpath:idRelative"],
         ["xpath=//div[2]/span/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "8b7ee96c-ee81-4afe-9b36-428096acc8db",
+      "id": "97bbd190-45b4-44ce-9182-5da0b906a50e",
       "comment": "",
       "command": "click",
       "target": "css=#fitem_fgroup_id_grade > .col-md-9",
@@ -1722,7 +2014,7 @@
       ],
       "value": ""
     }, {
-      "id": "d5ab181e-b413-4505-b9d0-2866350d3ffa",
+      "id": "b2c0783b-3530-48f0-b8d7-828532e63e9f",
       "comment": "",
       "command": "verifyText",
       "target": "id=fgroup_id_error_grade",
@@ -1730,12 +2022,26 @@
         ["id=fgroup_id_error_grade", "id"],
         ["css=#fgroup_id_error_grade", "css:finder"],
         ["xpath=//div[@id='fgroup_id_error_grade']", "xpath:attributes"],
-        ["xpath=//div[@id='yui_3_18_1_1_1714995436214_842']/div", "xpath:idRelative"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715131773012_846']/div", "xpath:idRelative"],
         ["xpath=//fieldset[3]/div[2]/div/div[2]/div", "xpath:position"]
       ],
       "value": "Invalid grade value. This must be an integer between 1 and 100"
     }, {
-      "id": "d184ad0e-9543-4f8a-9662-2957e312191e",
+      "id": "e67812f6-a478-4644-9bd1-121256dcec18",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_cancel",
+      "targets": [
+        ["id=id_cancel", "id"],
+        ["name=cancel", "name"],
+        ["css=#id_cancel", "css:finder"],
+        ["xpath=//input[@id='id_cancel']", "xpath:attributes"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715131773012_866']/input", "xpath:idRelative"],
+        ["xpath=//div/div/div[3]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a97a6bdf-37e1-42cf-9e17-8c181edba0b5",
       "comment": "",
       "command": "click",
       "target": "id=user-menu-toggle",
@@ -1743,30 +2049,28 @@
         ["id=user-menu-toggle", "id"],
         ["css=#user-menu-toggle", "css:finder"],
         ["xpath=//a[@id='user-menu-toggle']", "xpath:attributes"],
-        ["xpath=//div[@id='yui_3_18_1_1_1714995436214_870']/a", "xpath:idRelative"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/div/a", "xpath:idRelative"],
         ["xpath=(//a[contains(@href, '#')])[8]", "xpath:href"],
         ["xpath=//div[5]/div/div/a", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "6f835782-0688-4189-b6e0-eb017d5e92be",
+      "id": "c33dd9a2-fc6d-4638-80fb-566222d94152",
       "comment": "",
       "command": "click",
       "target": "linkText=Log out",
       "targets": [
-        ["id=yui_3_18_1_1_1714995436214_898", "id"],
         ["linkText=Log out", "linkText"],
-        ["css=#yui_3_18_1_1_1714995436214_898", "css:finder"],
+        ["css=#carousel-item-main > .dropdown-item:nth-child(11)", "css:finder"],
         ["xpath=//a[contains(text(),'Log out')]", "xpath:link"],
-        ["xpath=//a[@id='yui_3_18_1_1_1714995436214_898']", "xpath:attributes"],
         ["xpath=//div[@id='carousel-item-main']/a[9]", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/login/logout.php?sesskey=ek86ghGjOb')]", "xpath:href"],
+        ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/login/logout.php?sesskey=sudaINUwG9')]", "xpath:href"],
         ["xpath=//a[9]", "xpath:position"],
         ["xpath=//a[contains(.,'Log out')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "92479948-3cf2-45fb-a172-0a074ed3ff8a",
+      "id": "ce61e4ce-f4f5-4dda-9180-44946dc1e778",
       "comment": "",
       "command": "close",
       "target": "",

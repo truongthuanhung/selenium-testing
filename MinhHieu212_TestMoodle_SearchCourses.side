@@ -14,17 +14,24 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "d9faacc7-992f-4942-9c2e-9c52a6246ffe",
+      "id": "c864da14-3a3d-450b-a858-5c7aeb722736",
       "comment": "",
-      "command": "setWindowSize",
-      "target": "900x983",
+      "command": "click",
+      "target": "id=lang-menu-toggle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb7b00fd-5691-4d9a-87ed-0bbb878f9cb2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'English ‎(en)‎')]",
       "targets": [],
       "value": ""
     }, {
       "id": "c114e118-15bb-475a-8ed6-c9896d4cf11e",
       "comment": "",
       "command": "click",
-      "target": "linkText=Đăng nhập",
+      "target": "linkText=Log in",
       "targets": [],
       "value": ""
     }, {
@@ -34,6 +41,20 @@
       "target": "css=.login-container",
       "targets": [],
       "value": ""
+    }, {
+      "id": "471322db-87b0-41a2-8386-a92dedad1fdd",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86da4078-dd8d-46d5-ad22-8af9c69c5cb4",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [],
+      "value": "student"
     }, {
       "id": "c957d678-cbe4-4a62-b2e4-003ae40c5677",
       "comment": "",
@@ -211,17 +232,24 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "b4c2a193-c647-4550-a2fe-1b5091c4b404",
+      "id": "1c3133bc-b121-4d41-af3b-3355623f36bb",
       "comment": "",
-      "command": "setWindowSize",
-      "target": "900x983",
+      "command": "click",
+      "target": "id=lang-menu-toggle",
       "targets": [],
       "value": ""
     }, {
-      "id": "a1fa6192-9324-4d61-ac5c-283dd063738f",
+      "id": "e9d89d71-d1b1-404d-8afd-167fb94f3e27",
       "comment": "",
       "command": "click",
-      "target": "linkText=Đăng nhập",
+      "target": "xpath=//a[contains(text(),'English ‎(en)‎')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27f48639-1af6-4bd5-9be5-f348ee527162",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
       "targets": [],
       "value": ""
     }, {
@@ -231,6 +259,20 @@
       "target": "css=.login-container",
       "targets": [],
       "value": ""
+    }, {
+      "id": "390b7501-0f7f-4534-974b-d3dad5fd4120",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba121e7d-fff2-456c-a2fb-d54713dfa40a",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [],
+      "value": "student"
     }, {
       "id": "4d1e3c47-06e1-41ce-bd07-f80f3345629a",
       "comment": "",
@@ -380,17 +422,24 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "abf00c92-42ae-46ab-97df-c1c236971761",
+      "id": "877e21ff-2eab-4a6a-ad67-15becd4839eb",
       "comment": "",
-      "command": "setWindowSize",
-      "target": "900x983",
+      "command": "click",
+      "target": "id=lang-menu-toggle",
       "targets": [],
       "value": ""
     }, {
-      "id": "a330290e-6ffa-42c8-bc8b-213e803febef",
+      "id": "8b8170e3-8690-44bb-baa6-3565e3009e7d",
       "comment": "",
       "command": "click",
-      "target": "linkText=Đăng nhập",
+      "target": "xpath=//a[contains(text(),'English ‎(en)‎')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7254928-8970-4d3f-adbb-470d0787f529",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
       "targets": [],
       "value": ""
     }, {
@@ -400,6 +449,20 @@
       "target": "css=.login-container",
       "targets": [],
       "value": ""
+    }, {
+      "id": "0f40ffea-8fb6-4078-888d-589ace6bf754",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9059594c-67ee-4f50-9b2d-6a073603d561",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [],
+      "value": "student"
     }, {
       "id": "539e18da-adc1-4971-a013-8dc7889e9e5a",
       "comment": "",
@@ -589,17 +652,24 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "b024b4d2-5e0d-44f0-9c1f-71b745e25543",
+      "id": "554321ad-8778-4979-ac40-16f84d899408",
       "comment": "",
-      "command": "setWindowSize",
-      "target": "900x983",
+      "command": "click",
+      "target": "id=lang-menu-toggle",
       "targets": [],
       "value": ""
     }, {
-      "id": "0cbbdcf8-7c64-4262-bd69-cf19c14c16b9",
+      "id": "1f74d4f5-9f5f-4263-8c10-3446e16ef431",
       "comment": "",
       "command": "click",
-      "target": "linkText=Đăng nhập",
+      "target": "xpath=//a[contains(text(),'English ‎(en)‎')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe3cd19a-a4b6-4fda-a2b4-0cc9bffbef8c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
       "targets": [],
       "value": ""
     }, {
@@ -609,6 +679,20 @@
       "target": "css=.login-container",
       "targets": [],
       "value": ""
+    }, {
+      "id": "6f543775-c855-4143-9504-1b8e1b39f4ed",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a885196e-a18c-47f4-9686-5ce95d67beef",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [],
+      "value": "student"
     }, {
       "id": "6aa3933b-48f4-4c6e-bef7-b29f7781ba1f",
       "comment": "",
@@ -790,17 +874,24 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "587ea69f-5b64-4a89-9204-1f1e506b6e6f",
+      "id": "2d126a2f-a14e-416a-a3b7-d089376f04e5",
       "comment": "",
-      "command": "setWindowSize",
-      "target": "900x983",
+      "command": "click",
+      "target": "id=lang-menu-toggle",
       "targets": [],
       "value": ""
     }, {
-      "id": "5bfb4160-5112-4c10-bada-293741719353",
+      "id": "6da3281c-8de0-40d9-8656-a2c734427da2",
       "comment": "",
       "command": "click",
-      "target": "linkText=Đăng nhập",
+      "target": "xpath=//a[contains(text(),'English ‎(en)‎')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66f8000b-c3f6-4bce-ae41-31d7ae581dc1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
       "targets": [],
       "value": ""
     }, {
@@ -810,6 +901,20 @@
       "target": "css=.login-container",
       "targets": [],
       "value": ""
+    }, {
+      "id": "79568d1d-7234-4b58-a27f-bd9d0600d4f6",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20d59dec-4d95-40f2-8dea-a3528799f51b",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [],
+      "value": "student"
     }, {
       "id": "65baf926-7321-40d6-a31d-97649a80f108",
       "comment": "",
@@ -991,17 +1096,24 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "0e72d256-1e8f-4262-b1c7-1febdfc18ad1",
+      "id": "a7954a6c-f837-49e3-9142-3f42ce23beba",
       "comment": "",
-      "command": "setWindowSize",
-      "target": "900x983",
+      "command": "click",
+      "target": "id=lang-menu-toggle",
       "targets": [],
       "value": ""
     }, {
-      "id": "bf14fafc-e6ee-4419-ac87-5361020e2522",
+      "id": "421a388b-0b50-475f-af55-b89dfd99bd55",
       "comment": "",
       "command": "click",
-      "target": "linkText=Đăng nhập",
+      "target": "xpath=//a[contains(text(),'English ‎(en)‎')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af3bc4cc-ed6a-4c2b-8e2a-b85de91777bb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
       "targets": [],
       "value": ""
     }, {
@@ -1011,6 +1123,20 @@
       "target": "css=.login-container",
       "targets": [],
       "value": ""
+    }, {
+      "id": "12837c4c-2186-4e02-ae20-d549d2790c47",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b56834e-983c-4368-949f-f2ace909110c",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [],
+      "value": "student"
     }, {
       "id": "6d320a57-addb-40fb-b701-41e9b8a7de52",
       "comment": "",

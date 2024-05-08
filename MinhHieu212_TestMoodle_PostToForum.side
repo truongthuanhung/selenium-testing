@@ -14,34 +14,63 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "388d3a1b-d33d-4b77-9f9a-6e3beadce1f6",
+      "comment": "",
+      "command": "click",
+      "target": "id=lang-menu-toggle",
+      "targets": [
+        ["id=lang-menu-toggle", "id"],
+        ["css=#lang-menu-toggle", "css:finder"],
+        ["xpath=//a[@id='lang-menu-toggle']", "xpath:attributes"],
+        ["xpath=//div[@id='usernavigation']/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[8]", "xpath:href"],
+        ["xpath=//div[2]/div[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Vietnamese ‎(vi)‎')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "80327d45-2318-485d-8cee-fdc56bfa635b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'English ‎(en)‎')]",
+      "targets": [
+        ["css=.dropdown-item:nth-child(27)", "css:finder"],
+        ["xpath=//a[contains(text(),'English ‎(en)‎')]", "xpath:link"],
+        ["xpath=//div[@id='lang-action-menu']/a[27]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/?lang=en')]", "xpath:href"],
+        ["xpath=//a[27]", "xpath:position"],
+        ["xpath=//a[contains(.,'English ‎(en)‎')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
       "id": "6c9072f8-65df-4e2c-9e77-b12d1215bab4",
       "comment": "",
       "command": "click",
-      "target": "linkText=Đăng nhập",
+      "target": "linkText=Log in",
       "targets": [
-        ["linkText=Đăng nhập", "linkText"],
+        ["linkText=Log in", "linkText"],
         ["css=.login > a", "css:finder"],
-        ["xpath=//a[contains(text(),'Đăng nhập')]", "xpath:link"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
         ["xpath=//div[@id='usernavigation']/div[5]/div/span/a", "xpath:idRelative"],
         ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/login/index.php')]", "xpath:href"],
         ["xpath=//span/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Đăng nhập')]", "xpath:innerText"]
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
       ],
+      "value": ""
+    }, {
+      "id": "1d99ed17-3711-4e6c-b0e3-2739dbc4a299",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [],
       "value": ""
     }, {
       "id": "cd37f53e-1987-4f47-a102-483c4ebcfa37",
       "comment": "",
-      "command": "click",
+      "command": "type",
       "target": "id=username",
-      "targets": [
-        ["id=username", "id"],
-        ["name=username", "name"],
-        ["css=#username", "css:finder"],
-        ["xpath=//input[@id='username']", "xpath:attributes"],
-        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
-        ["xpath=//div/input", "xpath:position"]
-      ],
-      "value": ""
+      "targets": [],
+      "value": "student"
     }, {
       "id": "63f5904b-d6b2-4e02-8254-8082d65e67e5",
       "comment": "",
@@ -260,12 +289,12 @@
       "id": "12b877b3-bfde-41d0-9ab8-e387a5b81e7e",
       "comment": "",
       "command": "click",
-      "target": "xpath=(//a[contains(@href, '#')])[8]",
+      "target": "xpath=//a[@id='user-menu-toggle']",
       "targets": [
         ["id=user-menu-toggle", "id"],
         ["css=#user-menu-toggle", "css:finder"],
         ["xpath=//a[@id='user-menu-toggle']", "xpath:attributes"],
-        ["xpath=//div[@id='usernavigation']/div[5]/div/div/a", "xpath:idRelative"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715127625194_27']/a", "xpath:idRelative"],
         ["xpath=(//a[contains(@href, '#')])[8]", "xpath:href"],
         ["xpath=//div[5]/div/div/a", "xpath:position"]
       ],
@@ -304,10 +333,24 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "79979edc-5284-478f-8a19-5211309bf104",
+      "comment": "",
+      "command": "click",
+      "target": "id=lang-menu-toggle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a45ebb5-f16e-4000-8c1b-1da9e2b9afa1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'English ‎(en)‎')]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "6a4364e6-6fb4-43ac-8b58-fb8faaa14528",
       "comment": "",
       "command": "click",
-      "target": "linkText=Đăng nhập",
+      "target": "linkText=Log in",
       "targets": [
         ["linkText=Đăng nhập", "linkText"],
         ["css=.login > a", "css:finder"],
@@ -332,6 +375,13 @@
         ["xpath=//div/input", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "88bbaafc-7bab-482b-bdc5-e650b949d2f1",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [],
+      "value": "student"
     }, {
       "id": "b656ca7a-5f93-42ce-9f9e-7accc0388269",
       "comment": "",
@@ -507,10 +557,24 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "a452cfb2-683e-4574-a9b8-80f93c5e6347",
+      "comment": "",
+      "command": "click",
+      "target": "id=lang-menu-toggle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6270c6bf-943b-49c7-804c-c6b22b1aacdf",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'English ‎(en)‎')]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "ffe0d98b-506f-424e-91b1-49857fb351ac",
       "comment": "",
       "command": "click",
-      "target": "linkText=Đăng nhập",
+      "target": "linkText=Log in",
       "targets": [
         ["linkText=Đăng nhập", "linkText"],
         ["css=.login > a", "css:finder"],
@@ -522,19 +586,19 @@
       ],
       "value": ""
     }, {
-      "id": "97eb7cfd-6b21-4442-8d51-4ae25e43b11f",
+      "id": "fa32a2c3-b5af-4c9c-8ad2-c6026ac91ecf",
       "comment": "",
       "command": "click",
       "target": "id=username",
-      "targets": [
-        ["id=username", "id"],
-        ["name=username", "name"],
-        ["css=#username", "css:finder"],
-        ["xpath=//input[@id='username']", "xpath:attributes"],
-        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
-        ["xpath=//div/input", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
+    }, {
+      "id": "97eb7cfd-6b21-4442-8d51-4ae25e43b11f",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [],
+      "value": "student"
     }, {
       "id": "16a3420f-1d60-4d58-ae49-bd261dd57d88",
       "comment": "",
@@ -687,10 +751,24 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "688e5f6a-451f-4b2f-a3e1-4d8dff0cf561",
+      "comment": "",
+      "command": "click",
+      "target": "id=lang-menu-toggle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ddffffb-f407-4cd8-9a55-fe1c2df54eb3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'English ‎(en)‎')]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "f2aa2341-710c-42ca-8274-08c083c85d51",
       "comment": "",
       "command": "click",
-      "target": "linkText=Đăng nhập",
+      "target": "linkText=Log in",
       "targets": [
         ["linkText=Đăng nhập", "linkText"],
         ["css=.login > a", "css:finder"],
@@ -715,6 +793,13 @@
         ["xpath=//div/input", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "bff41d10-8ebb-4c21-a15c-ea5040063a9f",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [],
+      "value": "student"
     }, {
       "id": "841eb13e-cf06-4ed5-a3f5-f404bc0cee15",
       "comment": "",
@@ -1072,10 +1157,24 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "d4086d5d-698f-47dd-b6dc-23123c9d58ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=lang-menu-toggle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91b98aeb-fb4b-464b-9a0c-57f08b8fc610",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'English ‎(en)‎')]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "ec9aa4c7-e76e-42b1-afa1-df2bbf2b9f99",
       "comment": "",
       "command": "click",
-      "target": "linkText=Đăng nhập",
+      "target": "linkText=Log in",
       "targets": [
         ["linkText=Đăng nhập", "linkText"],
         ["css=.login > a", "css:finder"],
@@ -1100,6 +1199,13 @@
         ["xpath=//div/input", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "c91231cd-1648-4818-835d-1f9b6b8d421c",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [],
+      "value": "student"
     }, {
       "id": "77a690c6-49fe-4f48-8371-489a8e56ac8f",
       "comment": "",
@@ -1305,10 +1411,24 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "437d75e8-98bc-4d44-b9e5-41be8191b745",
+      "comment": "",
+      "command": "click",
+      "target": "id=lang-menu-toggle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "447d65cf-1195-4f24-af53-35ffb91cf3a8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'English ‎(en)‎')]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "4ce8d4af-1878-4fbc-8264-e458af5858f1",
       "comment": "",
       "command": "click",
-      "target": "linkText=Đăng nhập",
+      "target": "linkText=Log in",
       "targets": [
         ["linkText=Đăng nhập", "linkText"],
         ["css=.login > a", "css:finder"],
@@ -1333,6 +1453,13 @@
         ["xpath=//div/input", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "afaa3d0d-ca7c-4ee1-bb4e-7b0c2020421c",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [],
+      "value": "student"
     }, {
       "id": "1a5f13bb-5b1c-4d72-9fa3-fec0fa58ec3c",
       "comment": "",
@@ -1664,10 +1791,24 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "723ad0f4-9d91-4b69-9bf9-6f6f81a2b3de",
+      "comment": "",
+      "command": "click",
+      "target": "id=lang-menu-toggle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70f4f5c1-4a94-4017-9a9b-c62c3f836528",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'English ‎(en)‎')]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "fddb7b0f-1c36-4486-a89a-4114121b1e54",
       "comment": "",
       "command": "click",
-      "target": "linkText=Đăng nhập",
+      "target": "linkText=Log in",
       "targets": [
         ["linkText=Đăng nhập", "linkText"],
         ["css=.login > a", "css:finder"],
@@ -1692,6 +1833,13 @@
         ["xpath=//div/input", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "dc59285b-43d2-470d-9a1c-48220ce8e673",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [],
+      "value": "student"
     }, {
       "id": "f9d7a321-9c1e-40f0-9924-8241de3192e7",
       "comment": "",
@@ -1890,10 +2038,24 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "e751f951-1203-45b7-bc26-e6888a28e1df",
+      "comment": "",
+      "command": "click",
+      "target": "id=lang-menu-toggle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87edd979-a7be-4726-9b4d-22e8e37ce17f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'English ‎(en)‎')]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "ff0a9592-c070-4246-9b29-b3b86dded9d0",
       "comment": "",
       "command": "click",
-      "target": "linkText=Đăng nhập",
+      "target": "linkText=Log in",
       "targets": [
         ["linkText=Đăng nhập", "linkText"],
         ["css=.login > a", "css:finder"],
@@ -1918,6 +2080,13 @@
         ["xpath=//div/input", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "641ab05b-0fca-42b4-828e-d59ca53ead25",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [],
+      "value": "student"
     }, {
       "id": "679f4faf-302a-415c-abd3-fb964a8591d9",
       "comment": "",
@@ -2163,10 +2332,24 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "2bfee18b-fbf7-49e0-bea5-473f5cbeb738",
+      "comment": "",
+      "command": "click",
+      "target": "id=lang-menu-toggle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "725e4c09-24d6-460a-94bb-16d60ac9d3f8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'English ‎(en)‎')]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "04381439-6474-4e32-bcd7-7fa5448e39fb",
       "comment": "",
       "command": "click",
-      "target": "linkText=Đăng nhập",
+      "target": "linkText=Log in",
       "targets": [
         ["linkText=Đăng nhập", "linkText"],
         ["css=.login > a", "css:finder"],
@@ -2191,6 +2374,13 @@
         ["xpath=//div/input", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "8c744224-1894-4cf1-a09d-8a67669f7fc8",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [],
+      "value": "student"
     }, {
       "id": "e218a391-ec7d-452e-82ad-980da1dbec14",
       "comment": "",
@@ -2453,10 +2643,24 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "056b0316-fa26-4237-8e11-c87038a23c85",
+      "comment": "",
+      "command": "click",
+      "target": "id=lang-menu-toggle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1600929e-8ed3-49a1-b028-fba88e643803",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'English ‎(en)‎')]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "087447bd-f4b6-4ba4-982b-ae8e87c5f57d",
       "comment": "",
       "command": "click",
-      "target": "linkText=Đăng nhập",
+      "target": "linkText=Log in",
       "targets": [
         ["linkText=Đăng nhập", "linkText"],
         ["css=.login > a", "css:finder"],
@@ -2481,6 +2685,13 @@
         ["xpath=//div/input", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "5c922646-4094-4266-9957-5d521bc8c36f",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [],
+      "value": "student"
     }, {
       "id": "222c9659-caeb-45e5-b5f9-27fbf5858c00",
       "comment": "",
@@ -2838,10 +3049,24 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "ede155f5-1c13-435b-b318-5abd42c9f9b8",
+      "id": "befe688a-9609-48b6-bbb0-19e667acc531",
       "comment": "",
       "command": "click",
-      "target": "linkText=Đăng nhập",
+      "target": "id=lang-menu-toggle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "138c87b2-4f00-4f2a-bfff-87a8ad4038b8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'English ‎(en)‎')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c5e9b21-4063-41d8-8388-77748a49c57c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
       "targets": [
         ["linkText=Đăng nhập", "linkText"],
         ["css=.login > a", "css:finder"],
@@ -2866,6 +3091,13 @@
         ["xpath=//div/input", "xpath:position"]
       ],
       "value": ""
+    }, {
+      "id": "5ddd6b23-1897-454c-81db-f81f7af836ca",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [],
+      "value": "student"
     }, {
       "id": "2516e2bc-e5db-4053-90d5-c6131704b438",
       "comment": "",

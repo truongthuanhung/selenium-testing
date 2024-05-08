@@ -13,29 +13,30 @@ PASSWORD = 'moodle'
  
 class MoodleTest():
     def __init__(self, username, password, df):
-        self.username = username
-        self.password = password
-        self.driver = webdriver.Chrome()
-        self.df = df
-        self.method = None
+          self.username = username
+          self.password = password
+          self.driver = webdriver.Chrome()
+          self.df = df
+          self.method = None
         
     def log_in(self):
-        log_in_button = self.driver.find_element(By.LINK_TEXT, 'Log in')
-        log_in_button.click()
-        username_input = self.driver.find_element(By.NAME, 'username')
-        username_input.clear()
-        username_input.send_keys(self.username)
-        password_input = self.driver.find_element(By.NAME, 'password')
-        password_input.clear()
-        password_input.send_keys(self.password + Keys.ENTER)
-        time.sleep(3)
+          time.sleep(3)
+          log_in_button = self.driver.find_element(By.LINK_TEXT, 'Log in')
+          log_in_button.click()
+          username_input = self.driver.find_element(By.NAME, 'username')
+          username_input.clear()
+          username_input.send_keys(self.username)
+          password_input = self.driver.find_element(By.NAME, 'password')
+          password_input.clear()
+          password_input.send_keys(self.password + Keys.ENTER)
+          time.sleep(3)
     
     def log_out(self):
-        menu_toggle_element = self.driver.find_element(By.ID, 'user-menu-toggle')
-        menu_toggle_element.click()
-        log_out_button = self.driver.find_element(By.LINK_TEXT, 'Log out')
-        log_out_button.click()
-        time.sleep(3)
+          menu_toggle_element = self.driver.find_element(By.ID, 'user-menu-toggle')
+          menu_toggle_element.click()
+          log_out_button = self.driver.find_element(By.LINK_TEXT, 'Log out')
+          log_out_button.click()
+          time.sleep(2)
             
     def postToForum(self):
           for i in range(len(self.df)):
@@ -94,11 +95,14 @@ class MoodleTest():
                if not pd.isna(self.df.iloc[i]["ACTION"]):    
                     if self.df.iloc[i]["ACTION"] == "submit":
                          self.driver.find_element(By.NAME, "submitbutton").click()
-                              
+                         time.sleep(5)
                     elif self.df.iloc[i]["ACTION"] == "cancel":
-                         self.driver.find_element(By.ID, "id_cancel").click()
+                         if not pd.isna(self.df.iloc[i]["ADVANDED_MODE"]):
+                              self.driver.find_element(By.NAME, "cancel").click()
+                         else:
+                              self.driver.find_element(By.NAME, "cancelbtn").click()
+                         time.sleep(5)
                        
-               
                
                if not pd.isna(self.df.iloc[i]["VERIFY_TEST"]):    
                     if self.df.iloc[i]["VERIFY_TEST"] == "Your post was successfully added.":
@@ -139,6 +143,7 @@ class MoodleTest():
                
                
     def run_test(self):
+         
           self.driver.get('https://qa.moodledemo.net/')
           
           self.postToForum()
