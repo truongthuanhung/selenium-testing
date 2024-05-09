@@ -132,4 +132,4 @@ test.run_test()
 
 test.driver.quit()
 
-# "cli run tetst" : "python SetMaxGradeH5PQuizTest.py SetMaxGradeH5PQuiz.xlsx"
+# "cli run tetst" : "python SetMaxGradeH5PQuizTest.py SetMaxGradeH5PQuizTC.xlsx"
