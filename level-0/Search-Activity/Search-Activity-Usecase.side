@@ -96,7 +96,7 @@
       "id": "b464b0bb-3661-408d-851f-76bb988b24ec",
       "comment": "",
       "command": "verifyText",
-      "target": "xpath=//a[contains(text(),'Online text assignment')]",
+      "target": "linkText=Online text assignment",
       "targets": [
         ["linkText=Online text assignment", "linkText"],
         ["css=.event-name > a", "css:finder"],
@@ -229,7 +229,7 @@
       "id": "4ef24e9e-f3eb-4506-acd2-7ba7fc8fd662",
       "comment": "",
       "command": "verifyText",
-      "target": "xpath=//a[contains(text(),'Online text assignment')]",
+      "target": "linkText=Online text assignment",
       "targets": [
         ["linkText=Online text assignment", "linkText"],
         ["css=#yui_3_18_1_1_1715245783946_212 a", "css:finder"],
