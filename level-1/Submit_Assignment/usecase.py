@@ -54,11 +54,11 @@ class SubmitAssignment():
         log_out_button.click()
     
     def enter_assignment(self):
-
-        self.driver.find_element(By.XPATH,"//a[contains(@class, 'nav-link') and contains(text(), 'My courses')]").click()
-        self.driver.find_element(By.XPATH, "//a[contains(@class, 'coursename') and contains(., 'Activity examples')]").click()
+        
+        self.driver.find_element(By.LINK_TEXT, "My courses").click()
+        self.driver.find_element(By.LINK_TEXT, "Activity examples").click()
         self.driver.find_element(By.LINK_TEXT, "Assignment with file submissions").click()
-        time.sleep(5)
+        time.sleep(3)
     
     def get_test_data(self, idx):
         return self.data.iloc[idx - 1, 1], self.data.iloc[idx - 1, 2]
@@ -145,6 +145,7 @@ class SubmitAssignment():
         self.driver.find_element(By.XPATH, "//form/div[2]/div/input").send_keys("normal.pdf")
         time.sleep(2)
         self.driver.find_element(By.XPATH, "//button[contains(.,\'Update\')]").click()
+        time.sleep(2)
 
         # Submit file
         self.driver.find_element(By.ID, "id_submitbutton").click()
@@ -183,15 +184,14 @@ class SubmitAssignment():
         time.sleep(2)
 
         # Verify file
-        elements = self.driver.find_elements(By.CSS_SELECTOR, ".fp-reficons2")
-        assert len(elements) > 0
+        WebDriverWait(self.driver, 30).until(expected_conditions.presence_of_element_located((By.CSS_SELECTOR, ".fp-reficons2")))
 
         # Submit file
+        WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.XPATH, "//input[@id=\'id_submitbutton\']")))
         self.driver.find_element(By.ID, "id_submitbutton").click()
 
         # Verify successfully
         output_data = self.driver.find_element(By.XPATH, "//td[contains(.,\'Submitted for grading\')]").text
-        assert output_data == expected_data
 
         return output_data == expected_data
 
@@ -212,12 +212,10 @@ class SubmitAssignment():
         # Open a file
         self.driver.find_element(By.XPATH, "//span[contains(.,\'Upload a file\')]").click()
         self.driver.find_element(By.NAME, "repo_upload_file").send_keys(input_data) # Upload data
-        time.sleep(2)
 
         # Change file name
         self.driver.find_element(By.XPATH, "//div/div[2]/input").click()
         self.driver.find_element(By.XPATH, "//div/div[2]/input").send_keys("Normal-file")
-        time.sleep(2)
 
         # Upload file
         self.driver.find_element(By.XPATH, "//button[contains(.,\'Upload this file\')]").click()
@@ -244,8 +242,8 @@ class SubmitAssignment():
         self.driver.find_element(By.XPATH, "//button[contains(.,\'Add submission\')]").click()
 
         # Submit file
+        WebDriverWait(self.driver, 30).until(expected_conditions.visibility_of_element_located((By.XPATH, "//input[@id=\'id_submitbutton\']")))
         self.driver.find_element(By.ID, "id_submitbutton").click()
-        # self.driver.find_element(By.CSS_SELECTOR, ".alert").click()
 
         # Verify alert
         output_data = self.driver.find_element(By.CSS_SELECTOR, ".alert").text

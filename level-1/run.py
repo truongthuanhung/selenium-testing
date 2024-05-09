@@ -1,4 +1,6 @@
 import sys
+import os
+import shutil
 
 sys.path.extend([
     'Submit_Assignment/',
@@ -31,14 +33,29 @@ def main(functional, data_driven):
 
 def usage():
     print("################### USAGE ###################")
+    print("python run.py clean")
     print("python run.py test Submit-Assignment usecase")
     print("python run.py test Submit-Assignment equivalence")
     print("python run.py test Submit-Assignment boundary")
     print("python run.py test Search-Activity usecase")
     print("python run.py test Search-Activity equivalence")
 
+def clean():
+    root_dir = ".."
+    for root, dirs, files in os.walk(root_dir, topdown=False):
+        for name in dirs:
+            if name == '__pycache__':
+                shutil.rmtree(os.path.join(root, name))
+
 if __name__ == "__main__":
-    if len(sys.argv) < 4:
+
+    if len(sys.argv) < 2:
         usage()
-    else:
-        main(sys.argv[2], sys.argv[3])
+    elif sys.argv[1] == 'clean':
+        clean()
+    elif sys.argv[1] == 'test':
+
+        if len(sys.argv) < 4:
+            usage()
+        else:
+            main(sys.argv[2], sys.argv[3])
