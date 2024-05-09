@@ -13,8 +13,13 @@ def main(functional, data_driven):
         from Submit_Assignment import usecase as sb_usecase
         sb_usecase.main(data_driven)
     elif functional == 'Search-Activity':
-        from Search_Activity import usecase as sa_usecase
-        sa_usecase.main(data_driven)
+
+        if data_driven == 'usecase':
+            from Search_Activity import usecase as sa_usecase
+            sa_usecase.main(data_driven)
+        elif data_driven == 'equivalence':
+            from Search_Activity import equivalence as sa_equivalence
+            sa_equivalence.main(data_driven)
     else:
         usage()
 

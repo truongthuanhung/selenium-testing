@@ -411,10 +411,10 @@
       ],
       "value": "[' ]"
     }, {
-      "id": "7bcf2d85-154d-454a-b8e7-2b6c12d081b1",
+      "id": "c97c0cdf-554d-4ad3-833b-6ddf4dbf779b",
       "comment": "",
       "command": "verifyElementNotPresent",
-      "target": "xpath=//h4[contains(.,'Activity examples')]",
+      "target": "linkText=Technology Talk for EFL Class",
       "targets": [],
       "value": ""
     }]
