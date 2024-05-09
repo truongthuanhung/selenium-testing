@@ -1,0 +1,254 @@
+{
+  "id": "999b2d7c-ce2e-43a7-ac6c-e41d5d2824c6",
+  "version": "2.0",
+  "name": "Search-Activity-Usecase",
+  "url": "https://qa.moodledemo.net/my/courses.php",
+  "tests": [{
+    "id": "494e36d4-bef2-48ca-aa77-e581628d1cb1",
+    "name": "TC-008-001",
+    "commands": [{
+      "id": "ac670f0d-3eb9-4b34-907b-861c94ba9443",
+      "comment": "",
+      "command": "open",
+      "target": "https://qa.moodledemo.net/my/courses.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ddc0e7a2-8f0d-40df-b0b2-7aea11c96114",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0eecaba6-f95e-4268-9524-9e7767700678",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Dashboard",
+      "targets": [
+        ["linkText=Dashboard", "linkText"],
+        ["css=#moremenu-663c8c73236ba-navbar-nav > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Dashboard')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-663c8c73236ba-navbar-nav']/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://qa.moodledemo.net/my/')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dashboard')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "624a7cab-2fa6-4b44-9a01-0f25e415fb19",
+      "comment": "",
+      "command": "click",
+      "target": "id=timeline-day-filter-current-selection",
+      "targets": [
+        ["id=timeline-day-filter-current-selection", "id"],
+        ["css=#timeline-day-filter-current-selection", "css:finder"],
+        ["xpath=//span[@id='timeline-day-filter-current-selection']", "xpath:attributes"],
+        ["xpath=//div[@id='block-timeline-663c8c7938abd663c8c792bd332-1']/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/div/div/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'All ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "680095e1-f245-43ef-8a51-a46f9a29170a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=All",
+      "targets": [
+        ["linkText=All", "linkText"],
+        ["css=#menudayfilter > .dropdown-item:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'All')]", "xpath:link"],
+        ["xpath=//div[@id='menudayfilter']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[14]", "xpath:href"],
+        ["xpath=//div/aside/section/div/div/div/div/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'All')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "790b9f40-be7c-4713-8ad2-943ca84fe909",
+      "comment": "",
+      "command": "click",
+      "target": "name=search",
+      "targets": [
+        ["id=searchinput-663c8c7938abd663c8c792bd332", "id"],
+        ["name=search", "name"],
+        ["css=#searchinput-663c8c7938abd663c8c792bd332", "css:finder"],
+        ["xpath=//input[@id='searchinput-663c8c7938abd663c8c792bd332']", "xpath:attributes"],
+        ["xpath=//div[@id='searchform-auto-663c8c7938abd663c8c792bd332']/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfabb086-67b2-4fd5-a05f-5d21bf47b5fc",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["id=searchinput-663c8c7938abd663c8c792bd332", "id"],
+        ["name=search", "name"],
+        ["css=#searchinput-663c8c7938abd663c8c792bd332", "css:finder"],
+        ["xpath=//input[@id='searchinput-663c8c7938abd663c8c792bd332']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715244152708_68']/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "Online text"
+    }, {
+      "id": "b464b0bb-3661-408d-851f-76bb988b24ec",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//a[contains(text(),'Online text assignment')]",
+      "targets": [
+        ["linkText=Online text assignment", "linkText"],
+        ["css=.event-name > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Online text assignment')]", "xpath:link"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715244637103_367']/div/div[2]/div/h6/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://qa.moodledemo.net/mod/assign/view.php?id=4')]", "xpath:href"],
+        ["xpath=//h6/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Online text assignment')]", "xpath:innerText"]
+      ],
+      "value": "Online text assignment"
+    }]
+  }, {
+    "id": "500b7462-9174-435a-a529-482250cfae55",
+    "name": "TC-008-002",
+    "commands": [{
+      "id": "638098b8-2479-402b-bca2-79b2c329c65c",
+      "comment": "",
+      "command": "open",
+      "target": "https://qa.moodledemo.net/my/courses.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8348c087-4e72-40c3-88b9-7f5b884d69ad",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1032",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79222665-0622-440e-aa5d-a597a003f2c0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Dashboard",
+      "targets": [
+        ["linkText=Dashboard", "linkText"],
+        ["css=#moremenu-663c8c73236ba-navbar-nav > .nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Dashboard')]", "xpath:link"],
+        ["xpath=//ul[@id='moremenu-663c8c73236ba-navbar-nav']/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://qa.moodledemo.net/my/')])[2]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dashboard')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f7e40b0-f5ae-4f2f-bb91-3b08413f414e",
+      "comment": "",
+      "command": "click",
+      "target": "id=timeline-day-filter-current-selection",
+      "targets": [
+        ["id=timeline-day-filter-current-selection", "id"],
+        ["css=#timeline-day-filter-current-selection", "css:finder"],
+        ["xpath=//span[@id='timeline-day-filter-current-selection']", "xpath:attributes"],
+        ["xpath=//div[@id='block-timeline-663c8c7938abd663c8c792bd332-1']/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/div/div/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'All ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c20a86a-6820-438b-ace0-09e8289f33db",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Overdue",
+      "targets": [
+        ["linkText=Next 7 days", "linkText"],
+        ["css=#menudayfilter > .dropdown-item:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Next 7 days')]", "xpath:link"],
+        ["xpath=//div[@id='menudayfilter']/a[3]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[16]", "xpath:href"],
+        ["xpath=//section/div/div/div/div/div/div/div/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Next 7 days')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "db4335b2-5f78-4bb5-966a-6f3df3a88d86",
+      "comment": "",
+      "command": "click",
+      "target": "id=timeline-view-selector-current-selection",
+      "targets": [
+        ["id=timeline-view-selector-current-selection", "id"],
+        ["css=#timeline-view-selector-current-selection", "css:finder"],
+        ["xpath=//span[@id='timeline-view-selector-current-selection']", "xpath:attributes"],
+        ["xpath=//div[@id='block-timeline-663c8d7184ebe663c8d716aa392-1']/div/div/div[2]/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6c0ef79-60f7-417a-b224-ea267cd9e48a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sort by courses",
+      "targets": [
+        ["linkText=Sort by courses", "linkText"],
+        ["css=#menusortby > .dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sort by courses')]", "xpath:link"],
+        ["xpath=//div[@id='menusortby']/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#view_courses_663c8d7184ebe663c8d716aa392-1')]", "xpath:href"],
+        ["xpath=//section/div/div/div/div/div/div[2]/div/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Sort by courses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9fd0735-3864-4a47-b80a-d933130ec6d1",
+      "comment": "",
+      "command": "click",
+      "target": "name=search",
+      "targets": [
+        ["id=searchinput-663c8c7938abd663c8c792bd332", "id"],
+        ["name=search", "name"],
+        ["css=#searchinput-663c8c7938abd663c8c792bd332", "css:finder"],
+        ["xpath=//input[@id='searchinput-663c8c7938abd663c8c792bd332']", "xpath:attributes"],
+        ["xpath=//div[@id='searchform-auto-663c8c7938abd663c8c792bd332']/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86eca33c-5034-4876-ab91-0f7c6b37e385",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["id=searchinput-663c8c7938abd663c8c792bd332", "id"],
+        ["name=search", "name"],
+        ["css=#searchinput-663c8c7938abd663c8c792bd332", "css:finder"],
+        ["xpath=//input[@id='searchinput-663c8c7938abd663c8c792bd332']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715244152708_68']/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "assignment"
+    }, {
+      "id": "4ef24e9e-f3eb-4506-acd2-7ba7fc8fd662",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//a[contains(text(),'Online text assignment')]",
+      "targets": [
+        ["linkText=Online text assignment", "linkText"],
+        ["css=#yui_3_18_1_1_1715245783946_212 a", "css:finder"],
+        ["xpath=//a[contains(text(),'Online text assignment')]", "xpath:link"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715245783946_212']/div[2]/div/h6/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://qa.moodledemo.net/mod/assign/view.php?id=4')])[2]", "xpath:href"],
+        ["xpath=//h6/a", "xpath:position"]
+      ],
+      "value": "Online text assignment"
+    }]
+  }],
+  "suites": [{
+    "id": "9eab0179-eec7-4a1c-9ffd-e6622f780eeb",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["494e36d4-bef2-48ca-aa77-e581628d1cb1"]
+  }],
+  "urls": ["https://qa.moodledemo.net/my/courses.php"],
+  "plugins": []
+}
