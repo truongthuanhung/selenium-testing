@@ -1,0 +1,13 @@
+Usecase
+PASS - TC-363-007 - VERIFY_TEXT: Your post was successfully added. - RESULT_TEXT: Your post was successfully added.
+PASS - TC-363-008 - VERIFY_TEXT: Required - RESULT_TEXT: - Required
+PASS - TC-363-009 - Action Cancel and No Verify Text
+PASS - TC-363-010 - VERIFY_TEXT: Your post was successfully added. - RESULT_TEXT: Your post was successfully added.
+PASS - TC-363-011 - Action Cancel and No Verify Text
+Equivalence Class
+PASS - TC-363-012 - VERIFY_TEXT: Required - RESULT_TEXT: - Required
+PASS - TC-363-014 - VERIFY_TEXT: Required - RESULT_TEXT: - Required
+PASS - TC-363-015 - VERIFY_TEXT: Your post was successfully added. - RESULT_TEXT: Your post was successfully added.
+PASS - TC-363-016 - VERIFY_TEXT: Your post was successfully added. - RESULT_TEXT: Your post was successfully added.
+PASS - TC-363-017 - VERIFY_TEXT: Your post was successfully added. - RESULT_TEXT: Your post was successfully added.
+PASS - TC-363-013 - VERIFY_TEXT: Maximum of 255 characters - RESULT_TEXT: - Maximum of 255 characters
