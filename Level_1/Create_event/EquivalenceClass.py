@@ -69,7 +69,7 @@ class MoodleTest():
         actions.move_to_element(delete_button).perform()
         delete_button.click()
         time.sleep(5)
-        self.driver.find_element(By.XPATH, "//button[contains(.,'Delete event')]").click()
+        self.driver.find_element(By.XPATH, "//button[contains(.,\'Delete event\')]").click()
         time.sleep(3)
     
     def testcase(self, testid, title, duration):

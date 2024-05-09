@@ -38,7 +38,7 @@ class MoodleTest():
         self.driver.find_element(By.ID, "id_timedurationminutes").click()
         self.driver.find_element(By.ID, "id_timedurationminutes").send_keys(duration)
         self.driver.find_element(By.XPATH, "//button[contains(.,\'Save\')]").click()
-        time.sleep(5)
+        time.sleep(10)
     
     def verify_title_error(self, testid):
         self.driver.find_element(By.ID, "id_error_name").click()
@@ -69,7 +69,7 @@ class MoodleTest():
         actions.move_to_element(delete_button).perform()
         delete_button.click()
         time.sleep(5)
-        self.driver.find_element(By.XPATH, "//button[contains(.,'Delete event')]").click()
+        self.driver.find_element(By.XPATH, "//button[contains(.,\'Delete event\')]").click()
         time.sleep(3)
     
     def testcase(self, testid, title, duration):
