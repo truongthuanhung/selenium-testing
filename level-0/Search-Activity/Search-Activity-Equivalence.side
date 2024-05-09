@@ -308,16 +308,15 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "c9aa194f-76cc-442a-93f6-6425daac974e",
+      "id": "73dd44c4-a1f1-4781-9e83-e292c0257521",
       "comment": "",
       "command": "verifyText",
-      "target": "xpath=//div[2]/div[3]/p",
+      "target": "xpath=//p[contains(.,'No activities require action')]",
       "targets": [
-        ["id=yui_3_18_1_1_1715246417941_228", "id"],
-        ["css=#yui_3_18_1_1_1715246417941_228", "css:finder"],
-        ["xpath=//p[@id='yui_3_18_1_1_1715246417941_228']", "xpath:attributes"],
-        ["xpath=//div[@id='yui_3_18_1_1_1715246417941_224']/p", "xpath:idRelative"],
-        ["xpath=//div[2]/div[3]/p", "xpath:position"]
+        ["css=.text-xs-center:nth-child(3) > .text-muted", "css:finder"],
+        ["xpath=//div[@id='view_dates_663d0f8652347663d0f862b5b42-1']/div/div/div[3]/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'No activities require action')]", "xpath:innerText"]
       ],
       "value": "No activities require action"
     }]
@@ -413,10 +412,10 @@
     }, {
       "id": "c97c0cdf-554d-4ad3-833b-6ddf4dbf779b",
       "comment": "",
-      "command": "verifyElementNotPresent",
+      "command": "waitForElementNotVisible",
       "target": "linkText=Technology Talk for EFL Class",
       "targets": [],
-      "value": ""
+      "value": "30000"
     }]
   }, {
     "id": "d26204eb-0697-44ef-bb0a-f131c1e41f22",

@@ -567,24 +567,24 @@
       "value": "Submitted for grading"
     }]
   }, {
-    "id": "fbd3c95e-56f7-43e8-b60e-4b3bfea05de0",
+    "id": "1a323ef6-6340-4ec5-95bd-212d0189dd7b",
     "name": "TC-007-005",
     "commands": [{
-      "id": "fcf79a71-6d47-4661-a3fe-ba38224fdec4",
+      "id": "1b3bf1d2-362b-427d-b2a2-3dcd1d990259",
       "comment": "",
       "command": "open",
       "target": "https://qa.moodledemo.net/my/courses.php",
       "targets": [],
       "value": ""
     }, {
-      "id": "f4ad3df0-f224-46f4-bf5e-89c060722e76",
+      "id": "193b4948-b2a8-4689-8b97-2d57a91efa0d",
       "comment": "",
       "command": "setWindowSize",
       "target": "974x1032",
       "targets": [],
       "value": ""
     }, {
-      "id": "651a718b-6076-40ff-babd-9c403cfeb954",
+      "id": "63243663-8fe0-4309-8015-d37467a5bf22",
       "comment": "",
       "command": "click",
       "target": "css=#course-info-container-2-4 .multiline > span:nth-child(2)",
@@ -595,7 +595,7 @@
       ],
       "value": ""
     }, {
-      "id": "b187a8ef-b8f7-4060-9560-65c722ae633f",
+      "id": "7d78653f-f4b1-40a5-9cb1-3e9aee254736",
       "comment": "",
       "command": "click",
       "target": "linkText=Assignment with file submissions",
@@ -609,7 +609,7 @@
       ],
       "value": ""
     }, {
-      "id": "884e9451-abfa-4b76-9b5b-bb1a18e6e94b",
+      "id": "97c86608-526e-4eec-99d2-c6bf7f230a80",
       "comment": "",
       "command": "click",
       "target": "xpath=//button[contains(.,'Add submission')]",
@@ -623,7 +623,7 @@
       ],
       "value": ""
     }, {
-      "id": "ad6994ba-0ccc-43e9-bbb8-68a123d6dfb2",
+      "id": "b027a06e-44db-4603-86d6-d8e1ba9ee0c2",
       "comment": "",
       "command": "click",
       "target": "css=.fa-file-o",
@@ -634,14 +634,21 @@
       ],
       "value": ""
     }, {
-      "id": "712c49e5-33f9-4b2d-9e1d-016ff7a1d375",
+      "id": "1b16c271-0cb7-4957-a7f7-983b9a8df2d3",
       "comment": "",
       "command": "click",
       "target": "xpath=//span[contains(.,'Upload a file')]",
-      "targets": [],
+      "targets": [
+        ["id=yui_3_18_1_1_1715261966624_864", "id"],
+        ["css=#yui_3_18_1_1_1715261966624_864", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715261966624_864']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1715261966624_865']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
       "value": ""
     }, {
-      "id": "ca43cd37-9ee3-4ea6-b8a3-191b0f3efa3b",
+      "id": "50c8ccea-9dea-450b-a016-d61d5ec9bf0a",
       "comment": "",
       "command": "type",
       "target": "name=repo_upload_file",
@@ -655,7 +662,7 @@
       ],
       "value": "C:\\submit-assignment\\fnormal.pdf"
     }, {
-      "id": "f627b06b-ef9c-464f-94a0-5b3cfe4c4729",
+      "id": "0e57bf63-b728-45dd-bf4e-eacd4f31a635",
       "comment": "",
       "command": "click",
       "target": "xpath=//button[contains(.,'Upload this file')]",
@@ -669,7 +676,14 @@
       ],
       "value": ""
     }, {
-      "id": "bc9aff15-bf22-48e3-a3f3-0bbf422cf8e6",
+      "id": "3234595f-7a5e-4af8-a9ed-244a872b60ae",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.fp-reficons2",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "314511db-62ea-4b6a-af00-9491df14bca8",
       "comment": "",
       "command": "click",
       "target": "css=.fa-file-o",
@@ -680,7 +694,7 @@
       ],
       "value": ""
     }, {
-      "id": "b9f1482a-69d8-422a-8c33-c103aaff07c6",
+      "id": "a0ea4ca4-efaa-43b4-bed7-cace1024c7c2",
       "comment": "",
       "command": "type",
       "target": "name=repo_upload_file",
@@ -694,7 +708,7 @@
       ],
       "value": "C:\\submit-assignment\\jaas.dll"
     }, {
-      "id": "5f4e5a4e-cf51-4714-8991-26cc19bda5a5",
+      "id": "1538a268-e3a6-496e-9abe-45ca39c80b0e",
       "comment": "",
       "command": "click",
       "target": "xpath=//button[contains(.,'Upload this file')]",
@@ -708,21 +722,21 @@
       ],
       "value": ""
     }, {
-      "id": "9fd000c8-7984-44f7-b0de-d2d70b205b64",
+      "id": "aaa51a1c-3852-4e34-8a1b-b155c19fb9ac",
       "comment": "",
       "command": "waitForElementPresent",
       "target": "xpath=//a/div/div[3]",
       "targets": [],
       "value": "30000"
     }, {
-      "id": "39072536-4e91-4941-9996-7562e379dfac",
+      "id": "2234fa95-86b0-4164-8fb7-7639256ef549",
       "comment": "",
       "command": "waitForElementPresent",
       "target": "xpath=//div[2]/a/div/div[3]",
       "targets": [],
       "value": "30000"
     }, {
-      "id": "f9cccbf2-2e23-44e9-b57d-c5608459aca1",
+      "id": "33f47ab5-e5d4-4e5d-acf8-3be1a214240b",
       "comment": "",
       "command": "click",
       "target": "id=id_submitbutton",
@@ -736,11 +750,16 @@
       ],
       "value": ""
     }, {
-      "id": "cf132803-803b-468d-9b00-4d3c267d7994",
+      "id": "1cc9caca-6a87-40b9-a5ea-ade52f404a26",
       "comment": "",
-      "command": "verifyText",
+      "command": "click",
       "target": "xpath=//td[contains(.,'Submitted for grading')]",
-      "targets": [],
+      "targets": [
+        ["css=.submissionstatussubmitted", "css:finder"],
+        ["xpath=//section[@id='region-main']/div[2]/div[2]/div/div/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Submitted for grading')]", "xpath:innerText"]
+      ],
       "value": "Submitted for grading"
     }]
   }],

@@ -82,10 +82,9 @@ class SearchActivityUsecase():
         time.sleep(3)
 
         # Verify output
-        output_data = self.driver.find_element(By.LINK_TEXT, f"{expected_data}").text
-        
-        print(output_data)
-        print(expected_data)
+        output_data = self.driver.find_element(By.LINK_TEXT, f"{expected_data}").text     
+        print(f"Testcase #{idx} output: {output_data}")
+        print(f"Testcase #{idx} expected: {expected_data}")
 
         return output_data == expected_data
     
@@ -111,7 +110,9 @@ class SearchActivityUsecase():
 
         # Verify output
         output_data = self.driver.find_element(By.LINK_TEXT, f"{expected_data}").text
-        
+        print(f"Testcase #{idx} output: {output_data}")
+        print(f"Testcase #{idx} expected: {expected_data}")
+
         return output_data == expected_data
 
 
