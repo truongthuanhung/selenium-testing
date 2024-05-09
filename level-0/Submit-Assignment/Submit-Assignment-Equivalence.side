@@ -46,13 +46,6 @@
       ],
       "value": ""
     }, {
-      "id": "bbc9ac4a-18d1-45e4-a66d-b253e85d5ca1",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.h2",
-      "targets": [],
-      "value": "Assignment with file submissions"
-    }, {
       "id": "48ff6606-2d66-46b5-b390-d30e73466065",
       "comment": "",
       "command": "click",
@@ -67,13 +60,6 @@
       ],
       "value": ""
     }, {
-      "id": "0332cd31-ffaa-46b0-b112-5b00c509f8b9",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "xpath=//a[contains(.,'Add submission')]",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "e164bff8-9b25-475f-bfd0-9740d7ef8bba",
       "comment": "",
       "command": "click",
@@ -85,10 +71,24 @@
       ],
       "value": ""
     }, {
+      "id": "3e4337dd-7aaf-4d87-9eff-7b8ff6dad527",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1715260802472_801", "id"],
+        ["css=#yui_3_18_1_1_1715260802472_801", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715260802472_801']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1715260802472_802']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
       "id": "6bb960d3-9d58-4190-af31-bfca905f4eb0",
       "comment": "",
       "command": "type",
-      "target": "xpath=//form/div/div/div/input",
+      "target": "name=repo_upload_file",
       "targets": [
         ["id=yui_3_18_1_1_1715008484181_842", "id"],
         ["name=repo_upload_file", "name"],
@@ -115,10 +115,10 @@
     }, {
       "id": "3a4067ff-3583-4853-8e56-e56d18c8d81b",
       "comment": "",
-      "command": "verifyElementPresent",
+      "command": "waitForElementPresent",
       "target": "css=.fp-reficons2",
       "targets": [],
-      "value": ""
+      "value": "30000"
     }, {
       "id": "01e563fe-68ab-4823-a569-1d2336ed5f58",
       "comment": "",
@@ -136,14 +136,9 @@
     }, {
       "id": "fdd8cc1b-0820-497d-be1c-be5207ebaa38",
       "comment": "",
-      "command": "click",
+      "command": "verifyText",
       "target": "xpath=//td[contains(.,'Submitted for grading')]",
-      "targets": [
-        ["css=.submissionstatussubmitted", "css:finder"],
-        ["xpath=//section[@id='region-main']/div[2]/div[2]/div/div/table/tbody/tr/td", "xpath:idRelative"],
-        ["xpath=//td", "xpath:position"],
-        ["xpath=//td[contains(.,'Submitted for grading')]", "xpath:innerText"]
-      ],
+      "targets": [],
       "value": "Submitted for grading"
     }]
   }, {
@@ -189,13 +184,6 @@
       ],
       "value": ""
     }, {
-      "id": "d45ebaaa-427b-4cbb-b67b-0732a1bc6dd8",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.h2",
-      "targets": [],
-      "value": "Assignment with file submissions"
-    }, {
       "id": "14663a73-3bff-42f4-832a-869dee83f2fd",
       "comment": "",
       "command": "click",
@@ -210,13 +198,6 @@
       ],
       "value": ""
     }, {
-      "id": "584f9cfa-a8de-4394-8aa0-b739f77ea76e",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "xpath=//a[contains(.,'Add submission')]",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "07b2b978-3aa6-43d3-9e28-9daaa3a6b42c",
       "comment": "",
       "command": "click",
@@ -228,10 +209,24 @@
       ],
       "value": ""
     }, {
+      "id": "14f5064a-6bd1-41a4-a7ce-9b88df1c4e5a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1715262055075_865", "id"],
+        ["css=#yui_3_18_1_1_1715262055075_865", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715262055075_865']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1715262055075_866']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
       "id": "1c740510-382b-4b4e-a674-4a3812bcd079",
       "comment": "",
       "command": "type",
-      "target": "xpath=//form/div/div/div/input",
+      "target": "name=repo_upload_file",
       "targets": [
         ["id=yui_3_18_1_1_1715008484181_842", "id"],
         ["name=repo_upload_file", "name"],
@@ -258,10 +253,10 @@
     }, {
       "id": "0df69ab3-d7bf-4c86-9d53-70fb53df9047",
       "comment": "",
-      "command": "verifyElementPresent",
+      "command": "waitForElementPresent",
       "target": "css=.fp-reficons2",
       "targets": [],
-      "value": ""
+      "value": "30000"
     }, {
       "id": "5f4cf753-7313-40ea-947f-6c8d8ba51e02",
       "comment": "",
@@ -279,14 +274,9 @@
     }, {
       "id": "6c2930e1-c781-470d-bd0a-636dda3d8853",
       "comment": "",
-      "command": "click",
+      "command": "verifyText",
       "target": "xpath=//td[contains(.,'Submitted for grading')]",
-      "targets": [
-        ["css=.submissionstatussubmitted", "css:finder"],
-        ["xpath=//section[@id='region-main']/div[2]/div[2]/div/div/table/tbody/tr/td", "xpath:idRelative"],
-        ["xpath=//td", "xpath:position"],
-        ["xpath=//td[contains(.,'Submitted for grading')]", "xpath:innerText"]
-      ],
+      "targets": [],
       "value": "Submitted for grading"
     }]
   }, {
@@ -332,13 +322,6 @@
       ],
       "value": ""
     }, {
-      "id": "36630531-2dc5-4c8c-aa79-663e0e81eab2",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.h2",
-      "targets": [],
-      "value": "Assignment with file submissions"
-    }, {
       "id": "f53da3d3-a967-4f56-b2d8-d07dcb3c1dcc",
       "comment": "",
       "command": "click",
@@ -351,13 +334,6 @@
         ["xpath=//form/button", "xpath:position"],
         ["xpath=//button[contains(.,'Add submission')]", "xpath:innerText"]
       ],
-      "value": ""
-    }, {
-      "id": "fbfc4e14-8841-4e8e-845b-a89940a77999",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "xpath=//a[contains(.,'Add submission')]",
-      "targets": [],
       "value": ""
     }, {
       "id": "ccf30dda-98de-44ca-bc35-75320dc9b9a9",
@@ -376,14 +352,23 @@
     }, {
       "id": "9246b2b5-8319-4525-b7aa-7bfc27afcf0a",
       "comment": "",
-      "command": "click",
+      "command": "verifyElementPresent",
       "target": "css=.alert",
+      "targets": [],
+      "value": "Nothing was submitted"
+    }, {
+      "id": "6ae1502e-1f1f-44de-9320-03fc0a784c6e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//section/div[2]/div",
       "targets": [
-        ["css=.alert", "css:finder"],
-        ["xpath=//section[@id='region-main']/div[2]/div", "xpath:idRelative"],
+        ["id=yui_3_18_1_1_1715261462642_413", "id"],
+        ["css=#yui_3_18_1_1_1715261462642_413", "css:finder"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715261462642_413']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1715261462642_414']/div", "xpath:idRelative"],
         ["xpath=//section/div[2]/div", "xpath:position"]
       ],
-      "value": "Nothing was submitted"
+      "value": "Nothing was submitted\\n×\\nDismiss this notification"
     }]
   }, {
     "id": "d2628def-cbca-42a4-98c8-7ac2dbe49a3c",
@@ -428,13 +413,6 @@
       ],
       "value": ""
     }, {
-      "id": "4fe9d314-6a75-45e1-b0a5-a1f3fd20c32d",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.h2",
-      "targets": [],
-      "value": "Assignment with file submissions"
-    }, {
       "id": "3cd84615-140e-4d50-8623-ab5a3dfa4e6d",
       "comment": "",
       "command": "click",
@@ -449,13 +427,6 @@
       ],
       "value": ""
     }, {
-      "id": "1ac63300-0915-4179-a058-dbcb980c83ef",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "xpath=//a[contains(.,'Add submission')]",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "4e64f6f9-c22a-4db0-a860-35be8799068d",
       "comment": "",
       "command": "click",
@@ -467,10 +438,24 @@
       ],
       "value": ""
     }, {
+      "id": "c89212ff-f750-4cb8-8642-bef49b9b0558",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1715261966624_864", "id"],
+        ["css=#yui_3_18_1_1_1715261966624_864", "css:finder"],
+        ["xpath=//span[@id='yui_3_18_1_1_1715261966624_864']", "xpath:attributes"],
+        ["xpath=//a[@id='yui_3_18_1_1_1715261966624_865']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload a file')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
       "id": "d70c5a18-9522-43a5-b541-72cc9c53d401",
       "comment": "",
       "command": "type",
-      "target": "xpath=//form/div/div/div/input",
+      "target": "name=repo_upload_file",
       "targets": [
         ["id=yui_3_18_1_1_1715008484181_842", "id"],
         ["name=repo_upload_file", "name"],
@@ -497,10 +482,10 @@
     }, {
       "id": "7ee11ca3-1a8b-49cd-9606-f8352b53ef2b",
       "comment": "",
-      "command": "verifyElementPresent",
+      "command": "waitForElementPresent",
       "target": "css=.fp-reficons2",
       "targets": [],
-      "value": ""
+      "value": "30000"
     }, {
       "id": "de0e1097-dae0-4720-8961-484afad6c4ce",
       "comment": "",
@@ -516,7 +501,7 @@
       "id": "27dcec94-f533-4874-b3c0-99587ed28838",
       "comment": "",
       "command": "type",
-      "target": "xpath=//form/div/div/div/input",
+      "target": "name=repo_upload_file",
       "targets": [
         ["id=yui_3_18_1_1_1715008484181_842", "id"],
         ["name=repo_upload_file", "name"],
@@ -543,17 +528,17 @@
     }, {
       "id": "ec96cfe7-1fbf-4e05-917a-35e79399d0ed",
       "comment": "",
-      "command": "verifyElementPresent",
+      "command": "waitForElementPresent",
       "target": "xpath=//a/div/div[3]",
       "targets": [],
-      "value": ""
+      "value": "30000"
     }, {
       "id": "07b245b1-dd8a-44ff-a029-d51d65099356",
       "comment": "",
-      "command": "verifyElementPresent",
+      "command": "waitForElementPresent",
       "target": "xpath=//div[2]/a/div/div[3]",
       "targets": [],
-      "value": ""
+      "value": "30000"
     }, {
       "id": "f979ee41-e3af-4e43-822f-447dc9e035d5",
       "comment": "",
@@ -624,13 +609,6 @@
       ],
       "value": ""
     }, {
-      "id": "2e7d0e26-3e82-48cc-9073-183bf937d243",
-      "comment": "",
-      "command": "verifyText",
-      "target": "css=.h2",
-      "targets": [],
-      "value": "Assignment with file submissions"
-    }, {
       "id": "884e9451-abfa-4b76-9b5b-bb1a18e6e94b",
       "comment": "",
       "command": "click",
@@ -645,13 +623,6 @@
       ],
       "value": ""
     }, {
-      "id": "5c6f66f2-68bc-4782-93d9-6f58e3a41869",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "xpath=//a[contains(.,'Add submission')]",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "ad6994ba-0ccc-43e9-bbb8-68a123d6dfb2",
       "comment": "",
       "command": "click",
@@ -663,10 +634,17 @@
       ],
       "value": ""
     }, {
+      "id": "712c49e5-33f9-4b2d-9e1d-016ff7a1d375",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Upload a file')]",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "ca43cd37-9ee3-4ea6-b8a3-191b0f3efa3b",
       "comment": "",
       "command": "type",
-      "target": "xpath=//form/div/div/div/input",
+      "target": "name=repo_upload_file",
       "targets": [
         ["id=yui_3_18_1_1_1715008484181_842", "id"],
         ["name=repo_upload_file", "name"],
@@ -705,7 +683,7 @@
       "id": "b9f1482a-69d8-422a-8c33-c103aaff07c6",
       "comment": "",
       "command": "type",
-      "target": "xpath=//form/div/div/div/input",
+      "target": "name=repo_upload_file",
       "targets": [
         ["id=yui_3_18_1_1_1715008484181_842", "id"],
         ["name=repo_upload_file", "name"],
@@ -732,17 +710,17 @@
     }, {
       "id": "9fd000c8-7984-44f7-b0de-d2d70b205b64",
       "comment": "",
-      "command": "verifyElementPresent",
+      "command": "waitForElementPresent",
       "target": "xpath=//a/div/div[3]",
       "targets": [],
-      "value": ""
+      "value": "30000"
     }, {
       "id": "39072536-4e91-4941-9996-7562e379dfac",
       "comment": "",
-      "command": "verifyElementPresent",
+      "command": "waitForElementPresent",
       "target": "xpath=//div[2]/a/div/div[3]",
       "targets": [],
-      "value": ""
+      "value": "30000"
     }, {
       "id": "f9cccbf2-2e23-44e9-b57d-c5608459aca1",
       "comment": "",
