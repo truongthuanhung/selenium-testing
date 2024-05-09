@@ -10,8 +10,14 @@ sys.path.extend([
 def main(functional, data_driven):
     
     if functional == 'Submit-Assignment':
-        from Submit_Assignment import usecase as sb_usecase
-        sb_usecase.main(data_driven)
+
+        if data_driven == 'usecase':
+            from Submit_Assignment import usecase as sb_usecase
+            sb_usecase.main(data_driven)
+        elif data_driven == 'equivalence':
+            from Submit_Assignment import equivalence as sb_equivalence
+            sb_equivalence.main(data_driven)
+            
     elif functional == 'Search-Activity':
 
         if data_driven == 'usecase':
