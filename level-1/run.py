@@ -19,6 +19,11 @@ def main(functional, data_driven):
         elif data_driven == 'equivalence':
             from Submit_Assignment import equivalence as sb_equivalence
             sb_equivalence.main(data_driven)
+        elif data_driven == 'boundary':
+            from Submit_Assignment import boundary as sb_boundary
+            sb_boundary.main(data_driven)
+        else:
+            usage()
             
     elif functional == 'Search-Activity':
 
@@ -28,6 +33,8 @@ def main(functional, data_driven):
         elif data_driven == 'equivalence':
             from Search_Activity import equivalence as sa_equivalence
             sa_equivalence.main(data_driven)
+        else:
+            usage()
     else:
         usage()
 
