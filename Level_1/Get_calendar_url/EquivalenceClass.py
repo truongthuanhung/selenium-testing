@@ -5,6 +5,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.action_chains import ActionChains
 import time
+#tài khoản mật khẩu cho sinh viên
 USERNAME = 'student'
 PASSWORD = 'moodle'
 
@@ -14,7 +15,7 @@ class MoodleTest():
         self.password = password
         self.driver = webdriver.Chrome()
         
-    def log_in(self):
+    def log_in(self):#hàm login với username và password
         self.driver.get('https://qa.moodledemo.net/')
         self.driver.maximize_window()
         self.driver.find_element(By.LINK_TEXT, 'Log in').click()
@@ -22,77 +23,80 @@ class MoodleTest():
         self.driver.find_element(By.NAME, 'password').send_keys(self.password + Keys.ENTER)
         time.sleep(5)
     
-    def log_out(self):
+    def log_out(self):#hàm logout
         self.driver.find_element(By.ID, 'user-menu-toggle').click()
         self.driver.find_element(By.LINK_TEXT, 'Log out').click()
 
-    def enter_export_calendar(self):
-        self.driver.find_element(By.LINK_TEXT, "Dashboard").click()
+    def enter_export_calendar(self): #hàm các bước để vào lấy địa chỉ mạng của lịch
+        self.driver.find_element(By.LINK_TEXT, "Dashboard").click() #vào mục "Dashboard"
         time.sleep(5)
-        self.driver.find_element(By.XPATH, "//a[contains(.,\'Import or export calendars\')]").click()
+        self.driver.find_element(By.XPATH, "//a[contains(.,\'Import or export calendars\')]").click() #ấn nút Import or export calendars
         time.sleep(3)
-        self.driver.find_element(By.XPATH, "//button[contains(.,\'Export calendar\')]").click()
+        self.driver.find_element(By.XPATH, "//button[contains(.,\'Export calendar\')]").click() #ấn nút Export calendar
         time.sleep(3)
     
-    def verify_success(self):
+    def verify_success(self): #hàm kiểm tra lấy địa chỉ thành công
         value = self.driver.find_element(By.ID, "calendarexporturl").get_attribute("value")
         if not value == "https://qa.moodledemo.net/calendar/export_execute.php?userid=4&authtoken=3a825938ad829a496e27567fc51ef1b6839f4c6c&preset_what=all&preset_time=weeknow":
-            return False
-        self.driver.find_element(By.XPATH, "//button[contains(.,\'Copy URL\')]").click()
+            return False #nếu địa chỉ mạng không đú return false
+        self.driver.find_element(By.XPATH, "//button[contains(.,\'Copy URL\')]").click() #ấn Copy URL
         time.sleep(1)
         self.driver.find_element(By.CSS_SELECTOR, ".toast-message").click()
         if not self.driver.find_element(By.CSS_SELECTOR, ".toast-message").text == "Calendar URL copied to clipboard":
-            return False
+            return False #Nếu không hiện "Calendar URL copied to clipboard" return False
         return True
 
-    def verify_required(self, option):
-        if option == "noevents" or option == "noboth":
+    def verify_required(self, option): #hàm kiểm tra lỗi khi nhập thiếu các trường required
+        if option == "noevents" or option == "noboth":  #thiếu trường events hoặc cả 2
             self.driver.find_element(By.ID, "fgroup_id_error_events").click()
             if not self.driver.find_element(By.ID, "fgroup_id_error_events").text == "Required":
                 return False
-        if option == "noperiod" or option == "noboth":
+        if option == "noperiod" or option == "noboth": #thiếu trường period hoặc cả 2
             self.driver.find_element(By.ID, "fgroup_id_error_period").click()
             if not self.driver.find_element(By.ID, "fgroup_id_error_period").text == "Required":
-                return False
-        return True
+                return False 
+        return True #không thiếu trường nào
             
-    def print_result(self, testid, result):
+    def print_result(self, file, testid, result):  #hàm in kết quả
         if result:
             print(f"Textcase {testid} passed")
+            file.write(f"Textcase {testid} passed\n")
         else:
             print(f"Textcase {testid} failed")
+            file.write(f"Textcase {testid} failed\n")
    
-    def testcase1(self, testid):
+    def testcase1(self, file, testid): #testcase1 lấy địa chỉ thành công
         self.enter_export_calendar()
         self.driver.find_element(By.ID, "id_events_exportevents_all").click()
         self.driver.find_element(By.ID, "id_period_timeperiod_weeknow").click()
         self.driver.find_element(By.ID, "id_generateurl").click()
         time.sleep(3)
-        self.print_result(testid, self.verify_success())
+        self.print_result(file, testid, self.verify_success())
     
-    def testcase2(self, testid):
+    def testcase2(self, file, testid): #testcase2 quên nhập trường period
         self.enter_export_calendar()
         self.driver.find_element(By.ID, "id_events_exportevents_all").click()
         self.driver.find_element(By.ID, "id_generateurl").click()
-        self.print_result(testid, self.verify_required("noperiod"))
+        self.print_result(file, testid, self.verify_required("noperiod"))
         
-    def testcase3(self, testid):
+    def testcase3(self, file, testid): #testcase3 quên nhập trường events
         self.enter_export_calendar()
         self.driver.find_element(By.ID, "id_period_timeperiod_weeknow").click()
         self.driver.find_element(By.ID, "id_generateurl").click()
-        self.print_result(testid, self.verify_required("noevents"))
+        self.print_result(file, testid, self.verify_required("noevents"))
         
-    def testcase3(self, testid):
+    def testcase4(self, file, testid): #testcase4 quên nhập cả 2 trường
         self.enter_export_calendar()
         self.driver.find_element(By.ID, "id_generateurl").click()
-        self.print_result(testid, self.verify_required("noboth"))
+        self.print_result(file, testid, self.verify_required("noboth"))
    
     def run_test(self):
         self.log_in()
-        self.testcase1('TC-062-001')
-        self.testcase2('TC-062-002')
-        self.testcase2('TC-062-003')
-        self.testcase2('TC-062-004')
+        with open("EquivalenceClass_result", 'w') as file: #mở file result để ghi kết quả
+            self.testcase1(file, 'TC-062-001')
+            self.testcase2(file, 'TC-062-002')
+            self.testcase3(file, 'TC-062-003')
+            self.testcase4(file, 'TC-062-004')
         self.log_out()
         
 # Main

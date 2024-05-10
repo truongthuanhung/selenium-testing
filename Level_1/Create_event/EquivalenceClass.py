@@ -5,6 +5,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.action_chains import ActionChains
 import time
+#tài khoản mật khẩu cho sinh viên
 USERNAME = 'student'
 PASSWORD = 'moodle'
 
@@ -14,7 +15,7 @@ class MoodleTest():
         self.password = password
         self.driver = webdriver.Chrome()
         
-    def log_in(self):
+    def log_in(self): #hàm login với username và password
         self.driver.get('https://qa.moodledemo.net/')
         self.driver.maximize_window()
         self.driver.find_element(By.LINK_TEXT, 'Log in').click()
@@ -22,47 +23,53 @@ class MoodleTest():
         self.driver.find_element(By.NAME, 'password').send_keys(self.password + Keys.ENTER)
         time.sleep(5)
     
-    def log_out(self):
+    def log_out(self): #hàm logout
         self.driver.find_element(By.ID, 'user-menu-toggle').click()
         self.driver.find_element(By.LINK_TEXT, 'Log out').click()
 
-    def create_event(self, title, duration):
-        self.driver.find_element(By.LINK_TEXT, "Dashboard").click()
+    def create_event(self, title, duration): #hàm các bước trước tiên để tạo sự kiện
+        self.driver.find_element(By.LINK_TEXT, "Dashboard").click() #vào "Dashboard"
         time.sleep(3)
-        self.driver.find_element(By.XPATH, "//button[contains(.,\'New event\')]").click()
+        self.driver.find_element(By.XPATH, "//button[contains(.,\'New event\')]").click() #bấm nút "New event"
         time.sleep(3)
         self.driver.find_element(By.ID, "id_name").click()
-        self.driver.find_element(By.ID, "id_name").send_keys(title)
-        self.driver.find_element(By.XPATH, "//a[contains(.,\'Show more...\')]").click()
-        self.driver.find_element(By.ID, "id_duration_2").click()
+        self.driver.find_element(By.ID, "id_name").send_keys(title) #nhập tiêu đề
+        self.driver.find_element(By.XPATH, "//a[contains(.,\'Show more...\')]").click() #nhấn "Show more..."
+        self.driver.find_element(By.ID, "id_duration_2").click() #chọn có duration
         self.driver.find_element(By.ID, "id_timedurationminutes").click()
-        self.driver.find_element(By.ID, "id_timedurationminutes").send_keys(duration)
-        self.driver.find_element(By.XPATH, "//button[contains(.,\'Save\')]").click()
-        time.sleep(5)
+        self.driver.find_element(By.ID, "id_timedurationminutes").send_keys(duration) #nhập duration
+        self.driver.find_element(By.XPATH, "//button[contains(.,\'Save\')]").click() #nhấn lưu
+        time.sleep(10)
     
-    def verify_title_error(self, testid):
+    def verify_title_error(self, testid, file): #hàm kiểm tra lỗi tiêu đề không được nhập
         self.driver.find_element(By.ID, "id_error_name").click()
         if self.driver.find_element(By.ID, "id_error_name").text == "- Required":
             print(f"Textcase {testid} passed")
+            file.write(f"Textcase {testid} passed\n")
         else:
             print(f"Textcase {testid} failed")
+            file.write(f"Textcase {testid} failed\n")
         self.driver.find_element(By.XPATH, "//div[5]/div[2]/div/div/div/button/span").click()
     
-    def verify_duration_error(self, testid):
+    def verify_duration_error(self, testid, file): #hàm kiểm tra lỗi duration không được nhập
         self.driver.find_element(By.ID, "fgroup_id_error_durationgroup").click()
         if self.driver.find_element(By.ID, "fgroup_id_error_durationgroup").text == "The duration in minutes you have entered is invalid. Please enter the duration in minutes greater than 0 or select no duration.":
             print(f"Textcase {testid} passed")
+            file.write(f"Textcase {testid} passed\n")
         else:
             print(f"Textcase {testid} failed")
+            file.write(f"Textcase {testid} failed\n")
         self.driver.find_element(By.XPATH, "//div[5]/div[2]/div/div/div/button/span").click()
     
-    def verify_success(self, testid, title):
+    def verify_success(self, testid, title, file): #hàm kiểm tra việc tạo thành công
         self.driver.find_element(By.XPATH, f"//span[contains(.,\'{title}\')]").click()
         time.sleep(5)
         if self.driver.find_element(By.XPATH, f"//span[contains(.,\'{title}\')]").text == title:
             print(f"Textcase {testid} passed")
+            file.write(f"Textcase {testid} passed\n")
         else:
             print(f"Textcase {testid} failed")
+            file.write(f"Textcase {testid} failed\n")
         time.sleep(10)
         delete_button = self.driver.find_element(By.XPATH, "//div[2]/div/div/div[3]/button[contains(.,\'Delete\')]")
         actions = ActionChains(self.driver)
@@ -72,22 +79,23 @@ class MoodleTest():
         self.driver.find_element(By.XPATH, "//button[contains(.,\'Delete event\')]").click()
         time.sleep(3)
     
-    def testcase(self, testid, title, duration):
+    def testcase(self, file, testid, title, duration): #hàm testcase, nhận file result, testid, title, duration
         self.create_event(title, duration)
         if title == "":
-            self.verify_title_error(testid)
+            self.verify_title_error(testid, file)
         elif duration < 1: #vi moodle cat di phan thap phan
-            self.verify_duration_error(testid)
+            self.verify_duration_error(testid, file)
         else:
-            self.verify_success(testid, title)
+            self.verify_success(testid, title, file)
         time.sleep(3)
    
     def run_test(self):
         self.log_in()
-        self.testcase('TC-052-001', "Học từ vựng", 1)
-        self.testcase('TC-052-002', "Học từ vựng", 0)
-        self.testcase('TC-052-003', "", 1)
-        self.testcase('TC-052-004', "", 0)
+        with open("EquivalenceClass_result", 'w') as file:  #mở file result để ghi kết quả
+            self.testcase(file, 'TC-052-001', "Học từ vựng", 1)
+            self.testcase(file, 'TC-052-002', "Học từ vựng", 0)
+            self.testcase(file, 'TC-052-003', "", 1)
+            self.testcase(file, 'TC-052-004', "", 0)
         self.log_out()
         
 # Main
