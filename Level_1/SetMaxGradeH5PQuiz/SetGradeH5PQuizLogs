@@ -6,3 +6,4 @@ PASS - TC-363-020 - VERIFY_TEXT: Recalculating grades - RESULT_TEXT: Recalculati
 PASS - TC-363-021 - VERIFY_TEXT: Recalculating grades - RESULT_TEXT: Recalculating grades
 PASS - TC-363-022 - VERIFY_TEXT: Recalculating grades - RESULT_TEXT: Recalculating grades
 PASS - TC-363-023 - VERIFY_TEXT: Invalid grade value. This must be an integer between 1 and 100 - RESULT_TEXT: Invalid grade value. This must be an integer between 1 and 100
+PASS - TC-363-024 - VERIFY_TEXT: Recalculating grades - RESULT_TEXT: Recalculating grades
